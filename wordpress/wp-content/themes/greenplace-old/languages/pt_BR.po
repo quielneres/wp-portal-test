@@ -1,0 +1,1123 @@
+# Copyright (C) 2017 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2020-02-12 21:19-0300\n"
+"PO-Revision-Date: 2020-02-12 21:20-0300\n"
+"Last-Translator: Bruno Wego <brunowego@gmail.com>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/template-tags.php:82
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:99 template-parts/content-page.php:37
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: post-types/bulletin.php:9 post-types/bulletin.php:33
+msgid "Bulletins"
+msgstr "Comunicados"
+
+#: post-types/bulletin.php:10
+msgid "Bulletin"
+msgstr ""
+
+#: post-types/bulletin.php:11
+msgid "All Bulletins"
+msgstr ""
+
+#: post-types/bulletin.php:12
+msgid "Bulletin Archives"
+msgstr ""
+
+#: post-types/bulletin.php:13
+msgid "Bulletin Attributes"
+msgstr ""
+
+#: post-types/bulletin.php:14
+msgid "Insert into bulletin"
+msgstr ""
+
+#: post-types/bulletin.php:15
+msgid "Uploaded to this bulletin"
+msgstr ""
+
+#: post-types/bulletin.php:20
+msgid "Filter bulletins list"
+msgstr ""
+
+#: post-types/bulletin.php:21
+msgid "Bulletins list navigation"
+msgstr ""
+
+#: post-types/bulletin.php:22
+msgid "Bulletins list"
+msgstr ""
+
+#: post-types/bulletin.php:23
+msgid "New Bulletin"
+msgstr ""
+
+#: post-types/bulletin.php:24 post-types/company.php:24
+#: post-types/contract.php:24 post-types/guide.php:24 post-types/panel.php:24
+#: post-types/process.php:24 post-types/question.php:24
+#: post-types/system.php:24 post-types/tutorial.php:24
+msgid "Add New"
+msgstr ""
+
+#: post-types/bulletin.php:25
+msgid "Add New Bulletin"
+msgstr ""
+
+#: post-types/bulletin.php:26
+msgid "Edit Bulletin"
+msgstr ""
+
+#: post-types/bulletin.php:27
+msgid "View Bulletin"
+msgstr ""
+
+#: post-types/bulletin.php:28
+msgid "View Bulletins"
+msgstr ""
+
+#: post-types/bulletin.php:29
+msgid "Search bulletins"
+msgstr ""
+
+#: post-types/bulletin.php:30
+msgid "No bulletins found"
+msgstr ""
+
+#: post-types/bulletin.php:31
+msgid "No bulletins found in trash"
+msgstr ""
+
+#: post-types/bulletin.php:32
+msgid "Parent Bulletin:"
+msgstr ""
+
+#: post-types/bulletin.php:67
+#, php-format
+msgid "Bulletin updated. <a target=\"_blank\" href=\"%s\">View bulletin</a>"
+msgstr ""
+
+#: post-types/bulletin.php:68 post-types/company.php:68
+#: post-types/contract.php:68 post-types/guide.php:68 post-types/panel.php:68
+#: post-types/process.php:68 post-types/question.php:68
+#: post-types/system.php:68 post-types/tutorial.php:68
+msgid "Custom field updated."
+msgstr ""
+
+#: post-types/bulletin.php:69 post-types/company.php:69
+#: post-types/contract.php:69 post-types/guide.php:69 post-types/panel.php:69
+#: post-types/process.php:69 post-types/question.php:69
+#: post-types/system.php:69 post-types/tutorial.php:69
+msgid "Custom field deleted."
+msgstr ""
+
+#: post-types/bulletin.php:70
+msgid "Bulletin updated."
+msgstr ""
+
+#: post-types/bulletin.php:72
+#, php-format
+msgid "Bulletin restored to revision from %s"
+msgstr ""
+
+#: post-types/bulletin.php:74
+#, php-format
+msgid "Bulletin published. <a href=\"%s\">View bulletin</a>"
+msgstr ""
+
+#: post-types/bulletin.php:75
+msgid "Bulletin saved."
+msgstr ""
+
+#: post-types/bulletin.php:77
+#, php-format
+msgid ""
+"Bulletin submitted. <a target=\"_blank\" href=\"%s\">Preview bulletin</a>"
+msgstr ""
+
+#: post-types/bulletin.php:79
+#, php-format
+msgid ""
+"Bulletin scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview bulletin</a>"
+msgstr ""
+
+#: post-types/bulletin.php:80 post-types/company.php:80
+#: post-types/contract.php:80 post-types/guide.php:80 post-types/panel.php:80
+#: post-types/process.php:80 post-types/question.php:80
+#: post-types/system.php:80 post-types/tutorial.php:80
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: post-types/bulletin.php:82
+#, php-format
+msgid ""
+"Bulletin draft updated. <a target=\"_blank\" href=\"%s\">Preview bulletin</a>"
+msgstr ""
+
+#: post-types/company.php:9 post-types/company.php:33
+msgid "Companies"
+msgstr "Empresas"
+
+#: post-types/company.php:10
+msgid "Company"
+msgstr ""
+
+#: post-types/company.php:11
+msgid "All Companies"
+msgstr ""
+
+#: post-types/company.php:12
+msgid "Company Archives"
+msgstr ""
+
+#: post-types/company.php:13
+msgid "Company Attributes"
+msgstr ""
+
+#: post-types/company.php:14
+msgid "Insert into company"
+msgstr ""
+
+#: post-types/company.php:15
+msgid "Uploaded to this company"
+msgstr ""
+
+#: post-types/company.php:20
+msgid "Filter companies list"
+msgstr ""
+
+#: post-types/company.php:21
+msgid "Companies list navigation"
+msgstr ""
+
+#: post-types/company.php:22
+msgid "Companies list"
+msgstr ""
+
+#: post-types/company.php:23
+msgid "New Company"
+msgstr ""
+
+#: post-types/company.php:25
+msgid "Add New Company"
+msgstr ""
+
+#: post-types/company.php:26
+msgid "Edit Company"
+msgstr ""
+
+#: post-types/company.php:27
+msgid "View Company"
+msgstr ""
+
+#: post-types/company.php:28
+msgid "View Companies"
+msgstr ""
+
+#: post-types/company.php:29
+msgid "Search companies"
+msgstr ""
+
+#: post-types/company.php:30
+msgid "No companies found"
+msgstr ""
+
+#: post-types/company.php:31
+msgid "No companies found in trash"
+msgstr ""
+
+#: post-types/company.php:32
+msgid "Parent Company:"
+msgstr ""
+
+#: post-types/company.php:67
+#, php-format
+msgid "Company updated. <a target=\"_blank\" href=\"%s\">View company</a>"
+msgstr ""
+
+#: post-types/company.php:70
+msgid "Company updated."
+msgstr ""
+
+#: post-types/company.php:72
+#, php-format
+msgid "Company restored to revision from %s"
+msgstr ""
+
+#: post-types/company.php:74
+#, php-format
+msgid "Company published. <a href=\"%s\">View company</a>"
+msgstr ""
+
+#: post-types/company.php:75
+msgid "Company saved."
+msgstr ""
+
+#: post-types/company.php:77
+#, php-format
+msgid "Company submitted. <a target=\"_blank\" href=\"%s\">Preview company</a>"
+msgstr ""
+
+#: post-types/company.php:79
+#, php-format
+msgid ""
+"Company scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview company</a>"
+msgstr ""
+
+#: post-types/company.php:82
+#, php-format
+msgid ""
+"Company draft updated. <a target=\"_blank\" href=\"%s\">Preview company</a>"
+msgstr ""
+
+#: post-types/contract.php:9 post-types/contract.php:33
+msgid "Contracts"
+msgstr "Contratos"
+
+#: post-types/contract.php:10
+msgid "Contract"
+msgstr ""
+
+#: post-types/contract.php:11
+msgid "All Contracts"
+msgstr ""
+
+#: post-types/contract.php:12
+msgid "Contract Archives"
+msgstr ""
+
+#: post-types/contract.php:13
+msgid "Contract Attributes"
+msgstr ""
+
+#: post-types/contract.php:14
+msgid "Insert into Contract"
+msgstr ""
+
+#: post-types/contract.php:15
+msgid "Uploaded to this Contract"
+msgstr ""
+
+#: post-types/contract.php:20
+msgid "Filter Contracts list"
+msgstr ""
+
+#: post-types/contract.php:21
+msgid "Contracts list navigation"
+msgstr ""
+
+#: post-types/contract.php:22
+msgid "Contracts list"
+msgstr ""
+
+#: post-types/contract.php:23
+msgid "New Contract"
+msgstr ""
+
+#: post-types/contract.php:25
+msgid "Add New Contract"
+msgstr ""
+
+#: post-types/contract.php:26
+msgid "Edit Contract"
+msgstr ""
+
+#: post-types/contract.php:27
+msgid "View Contract"
+msgstr ""
+
+#: post-types/contract.php:28
+msgid "View Contracts"
+msgstr ""
+
+#: post-types/contract.php:29
+msgid "Search Contracts"
+msgstr ""
+
+#: post-types/contract.php:30
+msgid "No Contracts found"
+msgstr ""
+
+#: post-types/contract.php:31
+msgid "No Contracts found in trash"
+msgstr ""
+
+#: post-types/contract.php:32
+msgid "Parent Contract:"
+msgstr ""
+
+#: post-types/contract.php:67
+#, php-format
+msgid "Contract updated. <a target=\"_blank\" href=\"%s\">View Contract</a>"
+msgstr ""
+
+#: post-types/contract.php:70
+msgid "Contract updated."
+msgstr ""
+
+#: post-types/contract.php:72
+#, php-format
+msgid "Contract restored to revision from %s"
+msgstr ""
+
+#: post-types/contract.php:74
+#, php-format
+msgid "Contract published. <a href=\"%s\">View Contract</a>"
+msgstr ""
+
+#: post-types/contract.php:75
+msgid "Contract saved."
+msgstr ""
+
+#: post-types/contract.php:77
+#, php-format
+msgid ""
+"Contract submitted. <a target=\"_blank\" href=\"%s\">Preview Contract</a>"
+msgstr ""
+
+#: post-types/contract.php:79
+#, php-format
+msgid ""
+"Contract scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview Contract</a>"
+msgstr ""
+
+#: post-types/contract.php:82
+#, php-format
+msgid ""
+"Contract draft updated. <a target=\"_blank\" href=\"%s\">Preview Contract</a>"
+msgstr ""
+
+#: post-types/guide.php:9 post-types/guide.php:33
+msgid "Guides"
+msgstr "Guias"
+
+#: post-types/guide.php:10
+msgid "Guide"
+msgstr "Guia"
+
+#: post-types/guide.php:11
+msgid "All Guides"
+msgstr ""
+
+#: post-types/guide.php:12
+msgid "Guide Archives"
+msgstr ""
+
+#: post-types/guide.php:13
+msgid "Guide Attributes"
+msgstr ""
+
+#: post-types/guide.php:14
+msgid "Insert into guide"
+msgstr ""
+
+#: post-types/guide.php:15
+msgid "Uploaded to this guide"
+msgstr ""
+
+#: post-types/guide.php:20
+msgid "Filter guides list"
+msgstr ""
+
+#: post-types/guide.php:21
+msgid "Guides list navigation"
+msgstr ""
+
+#: post-types/guide.php:22
+msgid "Guides list"
+msgstr ""
+
+#: post-types/guide.php:23
+msgid "New Guide"
+msgstr ""
+
+#: post-types/guide.php:25
+msgid "Add New Guide"
+msgstr ""
+
+#: post-types/guide.php:26
+msgid "Edit Guide"
+msgstr ""
+
+#: post-types/guide.php:27
+msgid "View Guide"
+msgstr ""
+
+#: post-types/guide.php:28
+msgid "View Guides"
+msgstr ""
+
+#: post-types/guide.php:29
+msgid "Search guides"
+msgstr ""
+
+#: post-types/guide.php:30
+msgid "No guides found"
+msgstr ""
+
+#: post-types/guide.php:31
+msgid "No guides found in trash"
+msgstr ""
+
+#: post-types/guide.php:32
+msgid "Parent Guide:"
+msgstr ""
+
+#: post-types/guide.php:67
+#, php-format
+msgid "Guide updated. <a target=\"_blank\" href=\"%s\">View guide</a>"
+msgstr ""
+
+#: post-types/guide.php:70
+msgid "Guide updated."
+msgstr ""
+
+#: post-types/guide.php:72
+#, php-format
+msgid "Guide restored to revision from %s"
+msgstr ""
+
+#: post-types/guide.php:74
+#, php-format
+msgid "Guide published. <a href=\"%s\">View guide</a>"
+msgstr ""
+
+#: post-types/guide.php:75
+msgid "Guide saved."
+msgstr ""
+
+#: post-types/guide.php:77
+#, php-format
+msgid "Guide submitted. <a target=\"_blank\" href=\"%s\">Preview guide</a>"
+msgstr ""
+
+#: post-types/guide.php:79
+#, php-format
+msgid ""
+"Guide scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview guide</a>"
+msgstr ""
+
+#: post-types/guide.php:82
+#, php-format
+msgid "Guide draft updated. <a target=\"_blank\" href=\"%s\">Preview guide</a>"
+msgstr ""
+
+#: post-types/panel.php:9 post-types/panel.php:33
+msgid "Panels"
+msgstr "Painéis"
+
+#: post-types/panel.php:10
+msgid "Panel"
+msgstr ""
+
+#: post-types/panel.php:11
+msgid "All Panels"
+msgstr ""
+
+#: post-types/panel.php:12
+msgid "Panel Archives"
+msgstr ""
+
+#: post-types/panel.php:13
+msgid "Panel Attributes"
+msgstr ""
+
+#: post-types/panel.php:14
+msgid "Insert into Panel"
+msgstr ""
+
+#: post-types/panel.php:15
+msgid "Uploaded to this Panel"
+msgstr ""
+
+#: post-types/panel.php:20
+msgid "Filter Panels list"
+msgstr ""
+
+#: post-types/panel.php:21
+msgid "Panels list navigation"
+msgstr ""
+
+#: post-types/panel.php:22
+msgid "Panels list"
+msgstr ""
+
+#: post-types/panel.php:23
+msgid "New Panel"
+msgstr ""
+
+#: post-types/panel.php:25
+msgid "Add New Panel"
+msgstr ""
+
+#: post-types/panel.php:26
+msgid "Edit Panel"
+msgstr ""
+
+#: post-types/panel.php:27
+msgid "View Panel"
+msgstr ""
+
+#: post-types/panel.php:28
+msgid "View Panels"
+msgstr ""
+
+#: post-types/panel.php:29
+msgid "Search Panels"
+msgstr ""
+
+#: post-types/panel.php:30
+msgid "No Panels found"
+msgstr ""
+
+#: post-types/panel.php:31
+msgid "No Panels found in trash"
+msgstr ""
+
+#: post-types/panel.php:32
+msgid "Parent Panel:"
+msgstr ""
+
+#: post-types/panel.php:67
+#, php-format
+msgid "Panel updated. <a target=\"_blank\" href=\"%s\">View Panel</a>"
+msgstr ""
+
+#: post-types/panel.php:70
+msgid "Panel updated."
+msgstr ""
+
+#: post-types/panel.php:72
+#, php-format
+msgid "Panel restored to revision from %s"
+msgstr ""
+
+#: post-types/panel.php:74
+#, php-format
+msgid "Panel published. <a href=\"%s\">View Panel</a>"
+msgstr ""
+
+#: post-types/panel.php:75
+msgid "Panel saved."
+msgstr ""
+
+#: post-types/panel.php:77
+#, php-format
+msgid "Panel submitted. <a target=\"_blank\" href=\"%s\">Preview Panel</a>"
+msgstr ""
+
+#: post-types/panel.php:79
+#, php-format
+msgid ""
+"Panel scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview Panel</a>"
+msgstr ""
+
+#: post-types/panel.php:82
+#, php-format
+msgid "Panel draft updated. <a target=\"_blank\" href=\"%s\">Preview Panel</a>"
+msgstr ""
+
+#: post-types/process.php:9 post-types/process.php:33
+msgid "Processes"
+msgstr "Processos"
+
+#: post-types/process.php:10
+msgid "Process"
+msgstr ""
+
+#: post-types/process.php:11
+msgid "All Processes"
+msgstr ""
+
+#: post-types/process.php:12
+msgid "Process Archives"
+msgstr ""
+
+#: post-types/process.php:13
+msgid "Process Attributes"
+msgstr ""
+
+#: post-types/process.php:14
+msgid "Insert into Process"
+msgstr ""
+
+#: post-types/process.php:15
+msgid "Uploaded to this Process"
+msgstr ""
+
+#: post-types/process.php:20
+msgid "Filter Processes list"
+msgstr ""
+
+#: post-types/process.php:21
+msgid "Processes list navigation"
+msgstr ""
+
+#: post-types/process.php:22
+msgid "Processes list"
+msgstr ""
+
+#: post-types/process.php:23
+msgid "New Process"
+msgstr ""
+
+#: post-types/process.php:25
+msgid "Add New Process"
+msgstr ""
+
+#: post-types/process.php:26
+msgid "Edit Process"
+msgstr ""
+
+#: post-types/process.php:27
+msgid "View Process"
+msgstr ""
+
+#: post-types/process.php:28
+msgid "View Processes"
+msgstr ""
+
+#: post-types/process.php:29
+msgid "Search Processes"
+msgstr ""
+
+#: post-types/process.php:30
+msgid "No Processes found"
+msgstr ""
+
+#: post-types/process.php:31
+msgid "No Processes found in trash"
+msgstr ""
+
+#: post-types/process.php:32
+msgid "Parent Process:"
+msgstr ""
+
+#: post-types/process.php:67
+#, php-format
+msgid "Process updated. <a target=\"_blank\" href=\"%s\">View Process</a>"
+msgstr ""
+
+#: post-types/process.php:70
+msgid "Process updated."
+msgstr ""
+
+#: post-types/process.php:72
+#, php-format
+msgid "Process restored to revision from %s"
+msgstr ""
+
+#: post-types/process.php:74
+#, php-format
+msgid "Process published. <a href=\"%s\">View Process</a>"
+msgstr ""
+
+#: post-types/process.php:75
+msgid "Process saved."
+msgstr ""
+
+#: post-types/process.php:77
+#, php-format
+msgid "Process submitted. <a target=\"_blank\" href=\"%s\">Preview Process</a>"
+msgstr ""
+
+#: post-types/process.php:79
+#, php-format
+msgid ""
+"Process scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview Process</a>"
+msgstr ""
+
+#: post-types/process.php:82
+#, php-format
+msgid ""
+"Process draft updated. <a target=\"_blank\" href=\"%s\">Preview Process</a>"
+msgstr ""
+
+#: post-types/question.php:9 post-types/question.php:33
+msgid "Questions"
+msgstr "Perguntas Frequentes"
+
+#: post-types/question.php:10
+msgid "Question"
+msgstr ""
+
+#: post-types/question.php:11
+msgid "All Questions"
+msgstr ""
+
+#: post-types/question.php:12
+msgid "Question Archives"
+msgstr ""
+
+#: post-types/question.php:13
+msgid "Question Attributes"
+msgstr ""
+
+#: post-types/question.php:14
+msgid "Insert into Question"
+msgstr ""
+
+#: post-types/question.php:15
+msgid "Uploaded to this Question"
+msgstr ""
+
+#: post-types/question.php:20
+msgid "Filter Questions list"
+msgstr ""
+
+#: post-types/question.php:21
+msgid "Questions list navigation"
+msgstr ""
+
+#: post-types/question.php:22
+msgid "Questions list"
+msgstr ""
+
+#: post-types/question.php:23
+msgid "New Question"
+msgstr ""
+
+#: post-types/question.php:25
+msgid "Add New Question"
+msgstr ""
+
+#: post-types/question.php:26
+msgid "Edit Question"
+msgstr ""
+
+#: post-types/question.php:27
+msgid "View Question"
+msgstr ""
+
+#: post-types/question.php:28
+msgid "View Questions"
+msgstr ""
+
+#: post-types/question.php:29
+msgid "Search Questions"
+msgstr ""
+
+#: post-types/question.php:30
+msgid "No Questions found"
+msgstr ""
+
+#: post-types/question.php:31
+msgid "No Questions found in trash"
+msgstr ""
+
+#: post-types/question.php:32
+msgid "Parent Question:"
+msgstr ""
+
+#: post-types/question.php:67
+#, php-format
+msgid "Question updated. <a target=\"_blank\" href=\"%s\">View Question</a>"
+msgstr ""
+
+#: post-types/question.php:70
+msgid "Question updated."
+msgstr ""
+
+#: post-types/question.php:72
+#, php-format
+msgid "Question restored to revision from %s"
+msgstr ""
+
+#: post-types/question.php:74
+#, php-format
+msgid "Question published. <a href=\"%s\">View Question</a>"
+msgstr ""
+
+#: post-types/question.php:75
+msgid "Question saved."
+msgstr ""
+
+#: post-types/question.php:77
+#, php-format
+msgid ""
+"Question submitted. <a target=\"_blank\" href=\"%s\">Preview Question</a>"
+msgstr ""
+
+#: post-types/question.php:79
+#, php-format
+msgid ""
+"Question scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview Question</a>"
+msgstr ""
+
+#: post-types/question.php:82
+#, php-format
+msgid ""
+"Question draft updated. <a target=\"_blank\" href=\"%s\">Preview Question</a>"
+msgstr ""
+
+#: post-types/system.php:9 post-types/system.php:33
+msgid "Systems"
+msgstr "Sistemas"
+
+#: post-types/system.php:10
+msgid "System"
+msgstr ""
+
+#: post-types/system.php:11
+msgid "All Systems"
+msgstr ""
+
+#: post-types/system.php:12
+msgid "System Archives"
+msgstr ""
+
+#: post-types/system.php:13
+msgid "System Attributes"
+msgstr ""
+
+#: post-types/system.php:14
+msgid "Insert into system"
+msgstr ""
+
+#: post-types/system.php:15
+msgid "Uploaded to this system"
+msgstr ""
+
+#: post-types/system.php:20
+msgid "Filter systems list"
+msgstr ""
+
+#: post-types/system.php:21
+msgid "Systems list navigation"
+msgstr ""
+
+#: post-types/system.php:22
+msgid "Systems list"
+msgstr ""
+
+#: post-types/system.php:23
+msgid "New System"
+msgstr ""
+
+#: post-types/system.php:25
+msgid "Add New System"
+msgstr ""
+
+#: post-types/system.php:26
+msgid "Edit System"
+msgstr ""
+
+#: post-types/system.php:27
+msgid "View System"
+msgstr ""
+
+#: post-types/system.php:28
+msgid "View Systems"
+msgstr ""
+
+#: post-types/system.php:29
+msgid "Search systems"
+msgstr ""
+
+#: post-types/system.php:30
+msgid "No systems found"
+msgstr ""
+
+#: post-types/system.php:31
+msgid "No systems found in trash"
+msgstr ""
+
+#: post-types/system.php:32
+msgid "Parent System:"
+msgstr ""
+
+#: post-types/system.php:67
+#, php-format
+msgid "System updated. <a target=\"_blank\" href=\"%s\">View system</a>"
+msgstr ""
+
+#: post-types/system.php:70
+msgid "System updated."
+msgstr ""
+
+#: post-types/system.php:72
+#, php-format
+msgid "System restored to revision from %s"
+msgstr ""
+
+#: post-types/system.php:74
+#, php-format
+msgid "System published. <a href=\"%s\">View system</a>"
+msgstr ""
+
+#: post-types/system.php:75
+msgid "System saved."
+msgstr ""
+
+#: post-types/system.php:77
+#, php-format
+msgid "System submitted. <a target=\"_blank\" href=\"%s\">Preview system</a>"
+msgstr ""
+
+#: post-types/system.php:79
+#, php-format
+msgid ""
+"System scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview system</a>"
+msgstr ""
+
+#: post-types/system.php:82
+#, php-format
+msgid ""
+"System draft updated. <a target=\"_blank\" href=\"%s\">Preview system</a>"
+msgstr ""
+
+#: post-types/tutorial.php:9 post-types/tutorial.php:33
+msgid "Tutorials"
+msgstr "Tutoriais"
+
+#: post-types/tutorial.php:10
+msgid "Tutorial"
+msgstr ""
+
+#: post-types/tutorial.php:11
+msgid "All Tutorials"
+msgstr ""
+
+#: post-types/tutorial.php:12
+msgid "Tutorial Archives"
+msgstr ""
+
+#: post-types/tutorial.php:13
+msgid "Tutorial Attributes"
+msgstr ""
+
+#: post-types/tutorial.php:14
+msgid "Insert into Tutorial"
+msgstr ""
+
+#: post-types/tutorial.php:15
+msgid "Uploaded to this Tutorial"
+msgstr ""
+
+#: post-types/tutorial.php:20
+msgid "Filter Tutorials list"
+msgstr ""
+
+#: post-types/tutorial.php:21
+msgid "Tutorials list navigation"
+msgstr ""
+
+#: post-types/tutorial.php:22
+msgid "Tutorials list"
+msgstr ""
+
+#: post-types/tutorial.php:23
+msgid "New Tutorial"
+msgstr ""
+
+#: post-types/tutorial.php:25
+msgid "Add New Tutorial"
+msgstr ""
+
+#: post-types/tutorial.php:26
+msgid "Edit Tutorial"
+msgstr ""
+
+#: post-types/tutorial.php:27
+msgid "View Tutorial"
+msgstr ""
+
+#: post-types/tutorial.php:28
+msgid "View Tutorials"
+msgstr ""
+
+#: post-types/tutorial.php:29
+msgid "Search Tutorials"
+msgstr ""
+
+#: post-types/tutorial.php:30
+msgid "No Tutorials found"
+msgstr ""
+
+#: post-types/tutorial.php:31
+msgid "No Tutorials found in trash"
+msgstr ""
+
+#: post-types/tutorial.php:32
+msgid "Parent Tutorial:"
+msgstr ""
+
+#: post-types/tutorial.php:67
+#, php-format
+msgid "Tutorial updated. <a target=\"_blank\" href=\"%s\">View Tutorial</a>"
+msgstr ""
+
+#: post-types/tutorial.php:70
+msgid "Tutorial updated."
+msgstr ""
+
+#: post-types/tutorial.php:72
+#, php-format
+msgid "Tutorial restored to revision from %s"
+msgstr ""
+
+#: post-types/tutorial.php:74
+#, php-format
+msgid "Tutorial published. <a href=\"%s\">View Tutorial</a>"
+msgstr ""
+
+#: post-types/tutorial.php:75
+msgid "Tutorial saved."
+msgstr ""
+
+#: post-types/tutorial.php:77
+#, php-format
+msgid ""
+"Tutorial submitted. <a target=\"_blank\" href=\"%s\">Preview Tutorial</a>"
+msgstr ""
+
+#: post-types/tutorial.php:79
+#, php-format
+msgid ""
+"Tutorial scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview Tutorial</a>"
+msgstr ""
+
+#: post-types/tutorial.php:82
+#, php-format
+msgid ""
+"Tutorial draft updated. <a target=\"_blank\" href=\"%s\">Preview Tutorial</a>"
+msgstr ""
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content.php:39
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""

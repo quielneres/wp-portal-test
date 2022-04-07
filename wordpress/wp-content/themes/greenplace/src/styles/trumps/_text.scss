@@ -1,0 +1,50 @@
+$tx-warning-color: #f8d117;
+
+$tx-white-color: #fff;
+
+.tx-muted {
+  opacity: .7;
+}
+
+.tx-warning {
+  color: $tx-warning-color;
+}
+
+.tx-xs {
+  font-size: .75rem;
+  line-height: 1.5rem;
+}
+
+.tx-sm {
+  font-size: .87rem;
+  line-height: 1.5rem;
+}
+
+.tx-md {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.tx-lg {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.tx-xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.tx-white {
+  color: $tx-white-color;
+}
+
+.tx-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

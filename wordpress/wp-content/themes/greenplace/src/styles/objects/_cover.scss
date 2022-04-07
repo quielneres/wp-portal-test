@@ -1,0 +1,42 @@
+.cover {
+  padding-top: 1rem;
+  position: relative;
+  z-index: 1;
+
+  $this: &;
+
+  &--top {
+    > #{$this}__img {
+      background-position-y: top;
+    }
+  }
+
+  &--center {
+    > #{$this}__img {
+      background-position-y: center;
+    }
+  }
+
+  &--bottom {
+    > #{$this}__img {
+      background-position-y: bottom;
+    }
+  }
+
+  &--head {
+    padding-top: 12rem;
+  }
+
+  &__img {
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}

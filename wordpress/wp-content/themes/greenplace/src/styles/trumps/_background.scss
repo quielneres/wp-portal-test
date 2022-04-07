@@ -1,0 +1,60 @@
+$bg-trans-bg-color: rgba(#000, .3);
+
+$bg-white-bg-color: #fff;
+$bg-white-color: #333;
+
+$bg-gray-bg-color: #cecece;
+
+$bg-dark-bg-color: #394a57;
+$bg-dark-color: #fff;
+
+$bg-darker-bg-color: #2a3741;
+$bg-darker-color: #fff;
+
+$bg-green-bg-color: #2f8e84;
+$bg-green-color: #fff;
+
+$bg-blue-bg-color: #2c546e;
+$bg-blue-color: #fff;
+
+$bg-leaf-bg-color-start: #2f8e84;
+$bg-leaf-bg-color-end: #2c546e;
+$bg-leaf-color: #fff;
+
+.bg-trans {
+  background-color: $bg-trans-bg-color;
+}
+
+.bg-white {
+  background-color: $bg-white-bg-color;
+  color: $bg-white-color;
+}
+
+.bg-gray {
+  background-color: $bg-gray-bg-color;
+}
+
+.bg-dark {
+  background-color: $bg-dark-bg-color;
+  color: $bg-dark-color;
+}
+
+.bg-darker {
+  background-color: $bg-darker-bg-color;
+  color: $bg-darker-color;
+}
+
+.bg-green {
+  background-color: $bg-green-bg-color;
+  color: $bg-green-color;
+}
+
+.bg-blue {
+  background-color: $bg-blue-bg-color;
+  color: $bg-blue-color;
+}
+
+.bg-leaf {
+  background-image: linear-gradient(to left, $bg-leaf-bg-color-start, $bg-leaf-bg-color-end);
+  color: $bg-leaf-color;
+}

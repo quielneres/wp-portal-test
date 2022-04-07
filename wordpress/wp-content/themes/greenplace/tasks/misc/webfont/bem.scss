@@ -1,0 +1,20 @@
+@font-face {
+  font-family: '<%= fontFamilyName %>';
+  font-style: normal;
+  font-weight: normal;
+  src: <%= fontSrc2 %>; // stylelint-disable-line
+}
+
+<% if (baseStyles) { %>.<%= baseClass %> {
+  font-family: '<%= fontFamilyName %>';
+  font-style: normal;
+  font-weight: normal;
+}
+<% } %>
+<% if (iconsStyles) { %>
+/* Icons */
+<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+.<%= classPrefix %><%= glyphs[glyphIdx] %>::before {
+  content: '\<%= codepoints[glyphIdx] %>';
+}
+<% } } %>

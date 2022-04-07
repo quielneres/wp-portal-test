@@ -1,0 +1,95 @@
+.aspect-ratio {
+  display: flex;
+  padding: 0;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: inherit;
+  }
+
+  &--1x1 {
+    &::after {
+      padding-bottom: 100%;
+    }
+  }
+
+  // &--3x4 {
+  //   &::after {
+  //     padding-bottom: 133.33%;
+  //   }
+  // }
+
+  &--4x3 {
+    &::after {
+      padding-bottom: 75%;
+    }
+  }
+
+  // &--5x1 {
+  //   &::after {
+  //     padding-bottom: 15%;
+  //   }
+  // }
+
+  // &--4x6 {
+  //   &::after {
+  //     padding-bottom: 150%;
+  //   }
+  // }
+
+  // &--5x7 {
+  //   &::after {
+  //     padding-bottom: 140%;
+  //   }
+  // }
+
+  // &--5x8 {
+  //   &::after {
+  //     padding-bottom: 160%;
+  //   }
+  // }
+
+  &--6x4 {
+    &::after {
+      padding-bottom: 66.6%;
+    }
+  }
+
+  &--7x5 {
+    &::after {
+      padding-bottom: 71.42%;
+    }
+  }
+
+  &--8x5 {
+    &::after {
+      padding-bottom: 62.5%;
+    }
+  }
+
+  // &--9x16 {
+  //   &::after {
+  //     padding-bottom: 177.77%;
+  //   }
+  // }
+
+  &--16x9 {
+    &::after {
+      padding-bottom: 56.25%;
+    }
+  }
+
+  &--21x9 {
+    &::after {
+      padding-bottom: 42.8571%;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    padding: 1.5rem 1.5rem .5rem;
+    position: absolute;
+    width: 100%;
+  }
+}

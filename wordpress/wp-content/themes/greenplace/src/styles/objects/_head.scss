@@ -1,0 +1,61 @@
+$head-color: inherit;
+
+.head {
+  color: $head-color;
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  $this: &;
+
+  &--xs {
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+
+  &--sm {
+    font-size: .87rem;
+    line-height: 1rem;
+
+    > #{$this}__desc {
+      font-size: .75rem;
+    }
+  }
+
+  &--md {
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    > #{$this}__desc {
+      font-size: .87rem;
+    }
+  }
+
+  &--lg {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+    > #{$this}__desc {
+      font-size: 1rem;
+    }
+  }
+
+  &--xl {
+    font-size: 2rem;
+    line-height: 2rem;
+
+    > #{$this}__desc {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    opacity: .7;
+  }
+}

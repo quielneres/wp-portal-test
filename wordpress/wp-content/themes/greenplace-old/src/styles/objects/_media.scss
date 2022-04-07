@@ -1,0 +1,68 @@
+$media-bg-color: #cecece;
+$media-color: #fff;
+
+.media {
+  background-color: $media-bg-color;
+  border-radius: 50%;
+  color: $media-color;
+  display: inline-flex;
+  margin-bottom: 1rem;
+  vertical-align: bottom;
+
+  &:not(:first-child) {
+    margin-left: .5rem;
+  }
+
+  &:not(:last-child) {
+    margin-right: .5rem;
+  }
+
+  &--xs {
+    font-size: .75rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  &--sm {
+    font-size: .87rem;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  &--md {
+    font-size: 1rem;
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+
+  &--lg {
+    font-size: 1.25rem;
+    height: 7rem;
+    width: 7rem;
+  }
+
+  &--xl {
+    font-size: 1.5rem;
+    height: 8.5rem;
+    width: 8.5rem;
+  }
+
+  &__img {
+    border-radius: inherit;
+  }
+
+  &__text,
+  &__icon {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    font-weight: bold;
+    justify-content: center;
+  }
+
+  // &__text {}
+
+  &__icon {
+    font-size: 2em;
+  }
+}

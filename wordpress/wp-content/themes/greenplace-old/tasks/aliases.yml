@@ -1,0 +1,14 @@
+dev:
+- clean:dev
+- puglint:dev
+- pug:dev
+- prettify:dev
+- stylelint:dev
+- sass:dev
+- postcss:dev
+- php:dev
+- browserSync:dev
+- watch
+
+default:
+- dev

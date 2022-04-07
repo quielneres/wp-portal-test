@@ -1,0 +1,26 @@
+$breadcrumb-link-color: inherit;
+
+.breadcrumb {
+  font-size: .87rem;
+  line-height: 3rem;
+  padding-left: 0;
+
+  &__item {
+    display: inline-flex;
+    vertical-align: top;
+
+    &:not(:last-child) {
+      &::after {
+        content: '\2F';
+        margin-left: .75rem;
+        margin-right: .25rem;
+      }
+    }
+  }
+
+  &__link {
+    color: $breadcrumb-link-color;
+  }
+
+  // &__text {}
+}
