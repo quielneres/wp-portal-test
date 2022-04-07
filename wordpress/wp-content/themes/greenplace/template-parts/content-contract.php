@@ -188,12 +188,8 @@ $contracts = new WP_Query( array(
 												<div class="tip__media media media--xs">
 													<img class="media__img" src="https://humanograma.intranet.bb.com.br/avatar/<?php echo get_post_field( 'key', $fiscal ); ?>" alt="<?php echo get_post_field( 'name', $fiscal ); ?>">
 												</div>
-												<div class="tip__body head head--xs">
+												<div class="tip__body head head--xs" style="margin-top: -16px">
 													<a class="head__title" href="https://humanograma.intranet.bb.com.br/<?php echo get_post_field( 'key', $fiscal ); ?>" target="_blank"><?php echo get_post_field( 'name', $fiscal ); ?></a>
-													<span class="head__desc">
-														<i class="i i--phone tx-muted"></i>
-														<strong><?php echo get_post_field( 'phone', $fiscal ); ?></strong>
-													</span>
 												</div>
 											</div>
 										</div>
@@ -234,8 +230,8 @@ $contracts = new WP_Query( array(
 						while ( $contracts->have_posts() ) : $contracts->the_post(); ?>
 
 						<a class="widget" href="<?php the_permalink(); ?>">
-							<div class="widget__head aspect-ratio aspect-ratio--21x9 cover cover--top bg-blue">
-								<div class="cover__img" style="background-image: url(<?php the_field( 'background' ); ?>)"></div>
+							<div class="widget__head aspect-ratio aspect-ratio--25x9 cover cover--top bg-blue">
+								<div class="cover__img"></div>
 								<div class="aspect-ratio__content pos pos--bottom">
 									<h1 class="head head--sm"><span class="head__title"><?php the_title(); ?></span></h1>
 								</div>

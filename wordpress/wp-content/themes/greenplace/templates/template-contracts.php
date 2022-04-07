@@ -132,9 +132,7 @@ if ($system) {
 									<input class="form-radio" type="radio" id="system" value="system" name="type"<?php if ( get_query_var( 'type' ) == 'system' || get_query_var( 'type' ) == '' ): ?> checked="true"<?php endif; ?>>por Tipo de Contrato
 								</label>
 
-								<label class="form-label col col--xl-4" for="contract">
-									<input class="form-radio" type="radio" id="contract" value="contract" name="type"<?php if ( get_query_var( 'type' ) == 'contract' ): ?> checked="true"<?php endif; ?>>por Assunto
-								</label>
+
 
 								<label class="form-label col col--xl-4" for="company">
 									<input class="form-radio" type="radio" id="company" value="company" name="type"<?php if ( get_query_var( 'type' ) == 'company' ): ?> checked="true"<?php endif; ?>>por Empresa
