@@ -193,6 +193,8 @@ function greenplace_scripts() {
 
 	wp_enqueue_script( 'greenplace-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'greenplace-professional-profiles', get_template_directory_uri() . '/js/professional-profiles.js', array(), '20151215', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -200,14 +202,31 @@ function greenplace_scripts() {
 add_action( 'wp_enqueue_scripts', 'greenplace_scripts' );
 
 add_action('http_api_curl', function( $handle ){
-    // Don't verify SSL certs
-    // curl_setopt($handle, CURLOPT_SSL_VERIFYPEER, false);
-    // curl_setopt($handle, CURLOPT_SSL_VERIFYHOST, false);
+	// Don't verify SSL certs
+	// curl_setopt($handle, CURLOPT_SSL_VERIFYPEER, false);
+	// curl_setopt($handle, CURLOPT_SSL_VERIFYHOST, false);
 
-    // Use Charles HTTP Proxy
-    // curl_setopt($handle, CURLOPT_PROXY, "127.0.0.1");
-    // curl_setopt($handle, CURLOPT_PROXYPORT, 3128);
+	// Use Charles HTTP Proxy
+	// curl_setopt($handle, CURLOPT_PROXY, "127.0.0.1");
+	// curl_setopt($handle, CURLOPT_PROXYPORT, 3128);
 }, 10);
+
+
+function professional_profiles(){
+
+	$profiles = null;
+	if ($_GET['category'] !== null) {
+		$professional_profiles = new ProfessionalProfiles();
+		$profiles = $professional_profiles->list_profiles($_GET['category']);
+	}
+
+	echo json_encode($profiles);
+	die();
+}
+
+add_action( 'wp_ajax_get_professional_profiles', 'professional_profiles' );
+add_action( 'wp_ajax_nopriv_get_professional_profiles', 'professional_profiles' );
+
 
 function cyb_document_title_separator( $sep ) {
 
@@ -273,7 +292,12 @@ require get_template_directory() . '/post-types/simple.php';
 
 /**
  * Call a modular widget function
-*/
+ */
 require get_template_directory() . '/inc/widgets/widget-block.php';
 require get_template_directory() . '/inc/widgets/widget-process.php';
 require get_template_directory() . '/inc/widgets/widget-important.php';
+
+/**
+ * Load controllers
+ */
+require get_template_directory() . '/inc/controllers/ProfessionalProfiles.php';

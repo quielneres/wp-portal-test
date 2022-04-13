@@ -35,13 +35,19 @@ get_header();
 			<?php endif; ?>
 		</div>
 
-		<?php if ( is_active_sidebar( 'home-bottom-1' ) ) : ?>
 
-			<div class="row row--padded">
-				<?php dynamic_sidebar( 'home-bottom-1' ); ?>
+
+		<div class="row row--padded">
+			<div class="col col--md-6">
+				<?php get_template_part('template-parts/content-professional-profiles', ''); ?>
+
 			</div>
 
-		<?php endif; ?>
+			<div class="col col--md-6">
+				<?php get_template_part('template-parts/content-panels-reports', ''); ?>
+
+			</div>
+		</div>
 	</div>
 </main>
 
