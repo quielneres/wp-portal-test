@@ -236,6 +236,13 @@ function cyb_document_title_separator( $sep ) {
 
 }
 
+function get_questions_faq($category): array
+{
+	$questions = new Questions();
+	return $questions->list_questions($category);
+}
+
+
 /**
  * Implement the Custom Header feature.
  */
@@ -301,3 +308,4 @@ require get_template_directory() . '/inc/widgets/widget-important.php';
  * Load controllers
  */
 require get_template_directory() . '/inc/controllers/ProfessionalProfiles.php';
+require get_template_directory() . '/inc/controllers/Questions.php';
