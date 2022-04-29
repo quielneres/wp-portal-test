@@ -1,7 +1,13 @@
 (function( $ ) {
     let global_category
 
+    alert(12341)
+
+
+
     $('#combo_categories').change(function () {
+        console.log(111111);
+        console.log(global_category);
 
         const category = $("#combo_categories option:selected").val();
         const ajaxscript = { ajax_url : '/wp-admin/admin-ajax.php' }
@@ -17,9 +23,8 @@
             method : 'GET',
             success : function( response ){
                 if (response) {
-                    $("#combo_profiles")
-                        .removeAttr("disabled")
-                        .html('').append('<option>Selecione o perfil</option>');
+                    $("#combo_profiles").removeAttr("disabled");
+                    $("#combo_profiles").html('').append('<option>Selecione o perfil</option>');
 
                     $.each(JSON.parse(response), function(index, profile){
                         $("#combo_profiles").append(new Option(profile, index));

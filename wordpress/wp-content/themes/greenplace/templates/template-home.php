@@ -36,8 +36,19 @@ get_header();
 		</div>
 
 
-
 		<div class="row row--padded">
+            <style>
+                .comb-select {
+                    /*background-color: red;*/
+                    max-height: 12rem;
+                    min-height: 12rem ;
+                    padding: 25px 0 0 0;
+                    margin: 0 0 1rem;
+                }
+                .title--profiles{
+                    margin-top: 20px;
+                }
+            </style>
 			<div class="col col--md-6">
 				<?php get_template_part('template-parts/content-professional-profiles', ''); ?>
 

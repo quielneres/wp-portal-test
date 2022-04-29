@@ -17,13 +17,17 @@
 
 <div id="select-system" class="form-field is-hidden">
     <div class="form-select">
-        <select name="system_id" id="combo_profiles">
-            <option value="" hidden="true">Selecione o Pefil</option>
+        <select name="system_id" id="combo_profiles" disabled>
+            <option value="" hidden="true">Selecione o perfil</option>
         </select>
     </div>
 </div>
 
-
+<style>
+    .hr {
+        padding-bottom: 0.5rem;
+    }
+</style>
 <hr class="hr">
 
 <!-- <p>Se preferir, acesse nossa área de contratos.</p> -->
@@ -32,8 +36,3 @@
     <a class="btn btn--primary btn--block" target="_blank"
                    href="https://banco365.sharepoint.com.mcas.ms/sites/contratacaoporacionamento/SitePages/Perfis-Profissionais.aspx">Ver Todos</a>
 </div>
-
-<script>
-
-
-</script>
