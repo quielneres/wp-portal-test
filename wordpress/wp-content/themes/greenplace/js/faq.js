@@ -5,19 +5,22 @@ document.addEventListener("DOMContentLoaded", function() {
   var panel_category = document.getElementsByClassName("question__answer__category");
 
 
+
   for (var i = 0; i < accordion_category.length; i++) {
+
+
     accordion_category[i].onclick = function(event) {
 
       let class_img =  !this.parentElement.parentElement.children.item(0).classList.contains("question__bu__active");
 
-      if(class_img){
-
-        this.parentElement.parentElement.children.item(0).classList.remove("question__bu");
-        this.parentElement.parentElement.children.item(0).classList.toggle("question__bu__active");
-      }else{
-        this.parentElement.parentElement.children.item(0).classList.remove("question__bu__active");
-        this.parentElement.parentElement.children.item(0).classList.toggle("question__bu");
-      }
+      // if(class_img){
+      //
+      //   this.parentElement.parentElement.children.item(0).classList.remove("question__bu");
+      //   this.parentElement.parentElement.children.item(0).classList.toggle("question__bu__active");
+      // }else{
+      //   this.parentElement.parentElement.children.item(0).classList.remove("question__bu__active");
+      //   this.parentElement.parentElement.children.item(0).classList.toggle("question__bu");
+      // }
 
 
 
@@ -45,14 +48,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
       let class_img =  !this.parentElement.parentElement.children.item(0).classList.contains("question__bu__active");
 
-      if(class_img){
-
-        this.parentElement.parentElement.children.item(0).classList.remove("question__bu");
-        this.parentElement.parentElement.children.item(0).classList.toggle("question__bu__active");
-      }else{
-        this.parentElement.parentElement.children.item(0).classList.remove("question__bu__active");
-        this.parentElement.parentElement.children.item(0).classList.toggle("question__bu");
-      }
+      // if(class_img){
+      //
+      //   this.parentElement.parentElement.children.item(0).classList.remove("question__bu");
+      //   this.parentElement.parentElement.children.item(0).classList.toggle("question__bu__active");
+      // }else{
+      //   this.parentElement.parentElement.children.item(0).classList.remove("question__bu__active");
+      //   this.parentElement.parentElement.children.item(0).classList.toggle("question__bu");
+      // }
 
 
       var setClasses = !this.classList.contains("is-active");

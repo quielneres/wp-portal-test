@@ -36,7 +36,7 @@ $companies = get_posts( array(
 			<div class="form-field">
 				<div class="form-options row">
 					<label class="form-label col col--xl-6" for="system">
-						<input class="form-radio" type="radio" id="system" value="system" name="type"<?php if ( get_query_var( 'type' ) == 'system' || get_query_var( 'type' ) == '' ): ?> checked="true"<?php endif; ?>>por Sigla
+						<input class="form-radio" type="radio" id="system" value="system" name="type"<?php if ( get_query_var( 'type' ) == 'system' || get_query_var( 'type' ) == '' ): ?> checked="true"<?php endif; ?>>por Tipo de Contrato
 					</label>
 
 					<label class="form-label col col--xl-6" for="company">
@@ -49,22 +49,8 @@ $companies = get_posts( array(
 				<div class="form-select">
 					<select name="system_id">
 						<option value="" hidden="true">Selecione uma opção</option>
-
-						<?php
-						if ( $systems ):
-
-							foreach($systems as $post):
-
-								setup_postdata( $post )
-								?>
-								<option value="<?php the_id(); ?>"<?php if ( get_query_var( 'system_id' ) == $post->ID ): ?> selected="true"<?php endif; ?>><?php the_title(); ?></option>
-							<?php endforeach;
-
-						endif;
-
-						wp_reset_postdata();
-						?>
-
+                        <option value="acionamento" >Acionamento</option>
+                        <option value="fsw">Fábrica de Software</option>
 					</select>
 				</div>
 			</div>

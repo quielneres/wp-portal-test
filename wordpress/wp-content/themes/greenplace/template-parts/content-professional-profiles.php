@@ -14,8 +14,8 @@
                 <h2 class="widget__title">
                     <a href="">Perfis Profissionais</a>
                 </h2>
-                <p>Conheça os perfis profissionais que podem ser disponibilizados para colaboração, definições, conhecimentos e habilidades esperadas.<br>
-                    Selecione ao lado o perfil desejado.</p>
+                <p>Conheça os perfis profissionais que podem ser disponibilizados para colaboração, definições, conhecimentos e habilidades esperadas.</p>
+                <p>Selecione ao lado o perfil desejado.</p>
             </div>
         </div>
     </div>

@@ -1,8 +1,0 @@
-$default-font: 'Geomanist';
-$addr: '/wp-content/themes/greenplace/fonts';
-$file-format: eot woff ttf svg;
-
-@include font-face($default-font, $addr + '/geomanist-extralight-webfont', 200, $file-formats: $file-format);
-@include font-face($default-font, $addr + '/geomanist-light-webfont', 300, $file-formats: $file-format);
-@include font-face($default-font, $addr + '/geomanist-regular-webfont', normal, $file-formats: $file-format);
-@include font-face($default-font, $addr + '/geomanist-book-webfont', bold, $file-formats: $file-format);

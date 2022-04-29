@@ -44,7 +44,7 @@ get_header();
 			</div>
 
 			<div class="col col--md-6">
-				<?php get_template_part('template-parts/content-panels-reports', ''); ?>
+				<?php get_template_part('template-parts/content-panels-timeline', ''); ?>
 
 			</div>
 		</div>
