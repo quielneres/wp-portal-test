@@ -5,7 +5,7 @@ $posts = $args;
 ?>
 
 <style>
-    .question_cat {
+    .list_question {
         padding-left: 4.5rem;
         padding-top: 0;
         padding-bottom: 0;
@@ -20,11 +20,11 @@ foreach($posts as $post):
 setup_postdata( $post )
 ?>
 
-<div class=" question_cat content__body">
-    <a class="question__id question__link question__bu" href="#"></a>
+<div class=" content__body list_question">
+    <a class="question__id question__link question__icon__list list_question_action question__link__list" href="#"></a>
 
 
-    <h2 class="question__title ">
+    <h2 class="question__title list_question_action">
         <a class="question__link" href="#"><?php the_title(); ?></a>
     </h2>
 

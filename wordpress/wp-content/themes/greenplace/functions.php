@@ -185,7 +185,7 @@ function greenplace_scripts() {
 
 	wp_enqueue_script( 'greenplace-glide', get_template_directory_uri() . '/js/glide.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'greenplace-faq', get_template_directory_uri() . '/js/faq.js', array(), '20151215', true );
+    wp_enqueue_script( 'greenplace-questions', get_template_directory_uri() . '/js/questions.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'greenplace-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

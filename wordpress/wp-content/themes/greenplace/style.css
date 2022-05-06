@@ -3627,3 +3627,44 @@ select.form-select,
   margin-bottom: 25px;
 
 }
+
+
+.question__icon__index:before {
+  content: '\f054';
+  font-family: "Font Awesome 5 Free";
+  color: #2c546e;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  width: 32px;
+}
+
+.question__icon__list:before {
+  content: '\f105';
+  font-family: "Font Awesome 5 Free";
+  color: #2c546e;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  width: 32px;
+}
+
+.question__icon__index__active:after {
+  content: '\f078';
+  font-family: "Font Awesome 5 Free";
+  color: #2c546e;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  width: 32px;
+}
+
+.question__icon__list__active:after {
+  content: '\f107';
+  font-family: "Font Awesome 5 Free";
+  color: #2c546e;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  width: 32px;
+}

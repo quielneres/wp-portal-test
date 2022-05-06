@@ -1,27 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-
   var accordion_category = document.getElementsByClassName("question__link__category");
   var panel_category = document.getElementsByClassName("question__answer__category");
-
-
 
   for (var i = 0; i < accordion_category.length; i++) {
 
 
     accordion_category[i].onclick = function(event) {
-
-      let class_img =  !this.parentElement.parentElement.children.item(0).classList.contains("question__bu__active");
-
-      // if(class_img){
-      //
-      //   this.parentElement.parentElement.children.item(0).classList.remove("question__bu");
-      //   this.parentElement.parentElement.children.item(0).classList.toggle("question__bu__active");
-      // }else{
-      //   this.parentElement.parentElement.children.item(0).classList.remove("question__bu__active");
-      //   this.parentElement.parentElement.children.item(0).classList.toggle("question__bu");
-      // }
-
 
 
       event.preventDefault();
@@ -44,19 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
   for (var i = 0; i < accordion.length; i++) {
     accordion[i].onclick = function(event) {
       event.preventDefault();
-
-
-      let class_img =  !this.parentElement.parentElement.children.item(0).classList.contains("question__bu__active");
-
-      // if(class_img){
-      //
-      //   this.parentElement.parentElement.children.item(0).classList.remove("question__bu");
-      //   this.parentElement.parentElement.children.item(0).classList.toggle("question__bu__active");
-      // }else{
-      //   this.parentElement.parentElement.children.item(0).classList.remove("question__bu__active");
-      //   this.parentElement.parentElement.children.item(0).classList.toggle("question__bu");
-      // }
-
 
       var setClasses = !this.classList.contains("is-active");
 
