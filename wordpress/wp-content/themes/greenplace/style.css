@@ -18,6 +18,58 @@
   font-weight: bold;
   src: url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.woff2") format("woff2"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.woff") format("woff"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.ttf") format("truetype"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.svg#Geomanist") format("svg"); }
 
+
+/*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;700&display=swap');*/
+/*:root {*/
+/*  color: #333;*/
+/*  font-family: 'IBM Plex Sans', sans-serif;*/
+/*  font-size: 16px;*/
+/*  letter-spacing: -.01em;*/
+/*  line-height: 1.5; }*/
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;700&display=swap');*/
+/*:root {*/
+/*  color: #333;*/
+/*  font-family: 'Catamaran', sans-serif;*/
+/*  font-size: 16px;*/
+/*  letter-spacing: -.01em;*/
+/*  line-height: 1.5; }*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');*/
+/*:root {*/
+/*  color: #333;*/
+/*  font-family: 'Open Sans', sans-serif;*/
+/*  font-size: 15px;*/
+/*  letter-spacing: -.01em;*/
+/*  line-height: 1.5; }*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@200;300;400;600&display=swap');*/
+/*:root {*/
+/*  color: #333;*/
+/*  font-family: 'Commissioner', sans-serif;*/
+/*  font-size: 16px;*/
+/*  letter-spacing: -.01em;*/
+/*  line-height: 1.5; }*/
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');*/
+/*:root {*/
+/*  color: #333;*/
+/*  font-family: 'Nunito', sans-serif;*/
+/*  font-size: 15px;*/
+/*  letter-spacing: -.01em;*/
+/*  line-height: 1.5; }*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');*/
+/*:root {*/
+/*  color: #333;*/
+/*  font-family: 'Nunito Sans', sans-serif;*/
+/*  font-size: 16px;*/
+/*  letter-spacing: -.01em;*/
+/*  line-height: 1.5; }*/
+
 *,
 ::before,
 ::after {
@@ -35,6 +87,19 @@
   font-size: 16px;
   letter-spacing: -.01em;
   line-height: 1.5; }
+/*:root {*/
+/*  color: #333;*/
+/*  font-family: 'IBM Plex Sans', sans-serif;*/
+/*  font-size: 16px;*/
+/*  letter-spacing: -.01em;*/
+/*  line-height: 1.5; }*/
+
+/*:root {*/
+/*  color: #333;*/
+/*  font-family: 'Caladea', sans-serif;*/
+/*  font-size: 16px;*/
+/*  letter-spacing: -.01em;*/
+/*  line-height: 1.5; }*/
 
 html,
 body {
@@ -216,8 +281,17 @@ h6,
   font-size: .75rem; }
 
 .layout__head {
-  position: relative;
+  position: sticky;
   z-index: 100; }
+
+/*.layout__head {*/
+/*  position: -webkit-sticky;*/
+/*  position: sticky;*/
+/*  top: 0;*/
+/*  background-color: yellow;*/
+/*  padding: 50px;*/
+/*  font-size: 20px;*/
+/*}*/
 
 .layout__body {
   display: -webkit-box;

@@ -1,7 +1,7 @@
 <div id="select-system" class="form-field is-hidden">
     <div class="form-select">
         <select name="system_id" id="combo_categories">
-            <option value="" hidden="true">Selecione a opção</option>
+            <option value="" hidden="true">Selecione a categoria</option>
             <option value="alta_pataforma">Alta Plataforma</option>
             <option value="baixa_plataforma_mobile">Baixa Plataforma e Mobile</option>
             <option value="cloud_computing">Cloud Computing</option>
@@ -23,16 +23,10 @@
     </div>
 </div>
 
-<style>
-    .hr {
-        padding-bottom: 0.5rem;
-    }
-</style>
-<hr class="hr">
 
-<!-- <p>Se preferir, acesse nossa área de contratos.</p> -->
+<hr class="hr" style="margin: 30px 0 15px 0">
 
-<div class="fx">
+<div class="fx" style="">
     <a class="btn btn--primary btn--block" target="_blank"
                    href="https://banco365.sharepoint.com.mcas.ms/sites/contratacaoporacionamento/SitePages/Perfis-Profissionais.aspx">Ver Todos</a>
 </div>

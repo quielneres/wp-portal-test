@@ -35,18 +35,17 @@ get_header();
 			<?php endif; ?>
 		</div>
 
-
 		<div class="row row--padded">
             <style>
                 .comb-select {
                     /*background-color: red;*/
                     max-height: 12rem;
                     min-height: 12rem ;
-                    padding: 25px 0 0 0;
+                    padding: 0 0 0 0;
                     margin: 0 0 1rem;
                 }
-                .title--profiles{
-                    margin-top: 20px;
+                .desc-time-line{
+                    padding-bottom: 65px
                 }
             </style>
 			<div class="col col--md-6">
@@ -56,7 +55,6 @@ get_header();
 
 			<div class="col col--md-6">
 				<?php get_template_part('template-parts/content-panels-timeline', ''); ?>
-
 			</div>
 		</div>
 	</div>
