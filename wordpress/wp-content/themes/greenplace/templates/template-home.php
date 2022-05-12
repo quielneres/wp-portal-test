@@ -40,13 +40,17 @@ get_header();
                 .comb-select {
                     /*background-color: red;*/
                     max-height: 12rem;
-                    min-height: 12rem ;
+                    min-height: 7rem ;
                     padding: 0 0 0 0;
-                    margin: 0 0 1rem;
+                    margin: 50px 0 0 0;
                 }
                 .desc-time-line{
                     padding-bottom: 65px
                 }
+                /*.fx{*/
+                /*    padding-bottom: 0;*/
+                /*    margin-bottom: 0;*/
+                /*}*/
             </style>
 			<div class="col col--md-6">
 				<?php get_template_part('template-parts/content-professional-profiles', ''); ?>

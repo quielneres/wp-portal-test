@@ -189,6 +189,8 @@ function greenplace_scripts() {
 
 	wp_enqueue_script( 'greenplace-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'greenplace-menu-fix', get_template_directory_uri() . '/js/menu-fix.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'greenplace-contract', get_template_directory_uri() . '/js/contract.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'greenplace-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

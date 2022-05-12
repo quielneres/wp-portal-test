@@ -18,6 +18,35 @@
   font-weight: bold;
   src: url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.woff2") format("woff2"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.woff") format("woff"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.ttf") format("truetype"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.svg#Geomanist") format("svg"); }
 
+/*bloco fontes bb*/
+
+/*@font-face {*/
+/*  font-family: BancoDoBrasil;*/
+/*  src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTextos-Light.ttf');*/
+/*  font-weight: 200;*/
+/*}*/
+
+
+/*@font-face {*/
+/*  font-family: BancoDoBrasil;*/
+/*  src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTitulos-Bold.ttf ');*/
+/*  font-weight: bold;*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: BancoDoBrasil;*/
+/*  src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTextos-Medium.ttf');*/
+/*  font-weight: 300;*/
+/*}*/
+
+
+/*@font-face {*/
+/*  font-family: BancoDoBrasil;*/
+/*  src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTextos-Regular.ttf');*/
+/*  font-weight: normal;*/
+/*}*/
+
+
 
 /*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;700&display=swap');*/
 /*:root {*/
@@ -280,18 +309,16 @@ h6,
 .h6 {
   font-size: .75rem; }
 
-.layout__head {
-  position: sticky;
-  z-index: 100; }
+.layout {
+  transition: all ease 5s;
+}
 
-/*.layout__head {*/
-/*  position: -webkit-sticky;*/
-/*  position: sticky;*/
-/*  top: 0;*/
-/*  background-color: yellow;*/
-/*  padding: 50px;*/
-/*  font-size: 20px;*/
-/*}*/
+.layout__head {
+
+  position: sticky;
+  z-index: 100;
+
+}
 
 .layout__body {
   display: -webkit-box;
@@ -301,7 +328,10 @@ h6,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: calc(100vh - 8rem); }
+  min-height: calc(100vh - 8rem);
+  transition: all ease 1s;
+
+}
 
 .container {
   margin-left: auto;
@@ -1235,6 +1265,22 @@ h6,
 .header--pill .header__float {
   position: fixed;
   top: 0; }
+
+.header--pill .brand__img {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 0.2rem;
+}
+
+.header--pill .brand {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem
+}
+
+.header--pill .brand__abbr {
+  font-size : 1.35rem
+}
+
 .header__float {
   -webkit-box-shadow: 0 2px 0 0 #fff;
   box-shadow: 0 2px 0 0 #fff;

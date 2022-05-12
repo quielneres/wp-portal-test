@@ -24,7 +24,6 @@
 </div>
 
 
-<hr class="hr" style="margin: 30px 0 15px 0">
 
 <div class="fx" style="">
     <a class="btn btn--primary btn--block" target="_blank"

@@ -31,40 +31,12 @@ $last_guide = new WP_Query( array(
 
 	<div class="container pt-4 pb-2 fx-grow">
 		<div class="row row--padded">
-			<div class="col col--md-8 pt-3">
-				<?php
-				if ( $posts ):
 
-					foreach($posts as $post):
-
-						setup_postdata( $post )
-						?>
-
-						<div class="widget-number" style="background-color: <?php the_field( 'color' ); ?>; border-color: <?php the_field( 'color' ); ?>;">
-							<span><?php the_field( 'order' ); ?></span>
-						</div>
-						<div class="widget">
-							<div class="widget__body">
-								<h2 class="head head--lg">
-									<span class="head__title"><?php the_title(); ?></span>
-									<label class="fs-md">Executor: <span class="head__desc"><?php the_field( 'mediator' ); ?></span></label>
-								</h2>
-
-								<?php the_content(); ?>
-							</div>
-						</div>
-
-						<?php endforeach;
-
-					endif;
-
-					wp_reset_postdata();
-				?>
-			</div>
+			<div class="col col--md-8">
+                <?php get_template_part('template-parts/content-list-process', ''); ?>
+            </div>
 
 			<div class="col col--md-4">
-				<h2 class="h4">Veja Mais</h2>
-
 				<?php dynamic_sidebar( 'process-sidebar-1' ); ?>
 
 				<div class="widget">
