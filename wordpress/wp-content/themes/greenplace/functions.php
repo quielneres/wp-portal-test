@@ -97,6 +97,8 @@ if ( ! function_exists( 'greenplace_setup' ) ) :
 
 		// Enqueue editor styles.
 		add_editor_style( 'editor-style.css' );
+
+        wp_enqueue_style( 'process', get_template_directory_uri() . '/css/process.css',false,'1.1','all');
 	}
 endif;
 add_action( 'after_setup_theme', 'greenplace_setup' );
@@ -238,10 +240,14 @@ function cyb_document_title_separator( $sep ) {
 
 }
 
-function get_questions_faq($category): array
-{
+function get_questions_faq($category): array {
 	$questions = new Questions();
 	return $questions->list_questions($category);
+}
+
+function get_process($category): array {
+    $process = new Process();
+    return $process->list_process($category);
 }
 
 
@@ -311,3 +317,4 @@ require get_template_directory() . '/inc/widgets/widget-important.php';
  */
 require get_template_directory() . '/inc/controllers/ProfessionalProfiles.php';
 require get_template_directory() . '/inc/controllers/Questions.php';
+require get_template_directory() . '/inc/controllers/Process.php';

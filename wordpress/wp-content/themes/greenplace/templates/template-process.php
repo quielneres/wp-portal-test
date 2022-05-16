@@ -8,14 +8,6 @@
 
 get_header();
 
-$posts = get_posts( array(
-	'post_type'      => 'process',
-	'posts_per_page' => -1,
-	'meta_key'       => 'order',
-	'meta_type'      => 'NUMERIC',
-	'orderby'        => 'meta_value',
-	'order'          => 'ASC'
-) );
 
 $last_guide = new WP_Query( array(
 	'post_type'      => 'guide',
