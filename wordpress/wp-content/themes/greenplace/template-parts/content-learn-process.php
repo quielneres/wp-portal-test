@@ -20,11 +20,15 @@
         margin-top: -0.19rem;
         font-size: 2.5rem;
     }
+
+    .list__process .list__link{
+        color: #455AFF;
+        font-weight: normal;
+    }
 </style>
-<section id="process-2" class="widget fx-grow widget_process">
+<section id="process-2" class="widget fx-grow widget_process ">
     <div class="widget__body">
         <div class="row middle-xs">
-
 
             <div class="col col--md-8 col--xl-7">
                 <h2 class="widget__title">
@@ -34,10 +38,10 @@
 
                 <hr class="hr">
 
-                <ul class="list list--dot row mb-0 mb-sm-3">
+                <ul class="list list--dot row mb-0 mb-sm-3 list__process">
                     <li class="list__item col col--sm-6  list__item--788">
                         <a href="http://portal.stt.intranet.bb.com.br/processo/" class="list__link fw-450">
-                            Acessos Básicos - Alta Plat.
+                            Acessos básicos - Alta plat.
                         </a>
                     </li>
                     <li class="list__item col col--sm-6  list__item--790">
@@ -48,17 +52,17 @@
                     <li class="list__item col col--sm-6  list__item--951">
                         <a target="_blank"
                            href="https://banco365.sharepoint.com/:b:/s/PortaldeGestodeServiosContratadosdeSoftware/EfFTQOY-Z2BEmg2nEdXR2-kBIHksIgK3_macur0ImOqiLw?e=xVgB2G"
-                           class="list__link fw-450">Acessos Básicos - Baixa Plat.</a>
+                           class="list__link fw-450">Acessos básicos - Baixa plat.</a>
                     </li>
                     <li class="list__item col col--sm-6  list__item--1114">
                         <a target="_blank"
                            href="https://banco365.sharepoint.com.mcas.ms/sites/contratacaoporacionamento/SitePages/Roteiro-de-Condu%C3%A7%C3%A3o-de-Ordens-de-Fornecimento(1).aspx"
-                           class="list__link fw-450">Iclusão no Teams</a>
+                           class="list__link fw-450">Inclusão no Teams</a>
                     </li>
 
                     <li class="list__item col col--sm-6  list__item--789">
                         <a href="http://portal.stt.intranet.bb.com.br/question/quais-sao-os-acessos-necessarios-para-conducao-de-ofs/"
-                           class="list__link fw-450">Acessos ao Painel de Gestão</a>
+                           class="list__link fw-450">Acesso ao Painel de Gestão</a>
                     </li>
 
                 </ul>
@@ -69,7 +73,7 @@
 
     <div class="col col--md-4 col--xl-5 figure-learn-process">
         <figure class="widget__figure">
-            <img class="widget__img" src="http://localhost:8000/wp-content/uploads/imagem-pagina-inicial.svg"
+            <img class="widget__img" src="<?php echo get_template_directory_uri(); ?>/img/imagem-pagina-inicial.svg"
                  alt="Conheça o nosso Processo" style="max-height: 16rem">
         </figure>
     </div>

@@ -24,7 +24,7 @@
 								<div class="row">
 									<div class="col col--sm-6 col--xl-4">
 										<div class="tip tip--sm mb-0">
-											<div class="tip__media media media--sm bg-trans" style="margin-right: 0">
+											<div class="tip__media media media--sm bg-trans" style="margin-right: 0.2rem">
 												<div class="media__text tx-warning fs-lg"><?php echo wp_count_posts( 'contract' )->publish; ?></div>
 											</div>
 
@@ -48,7 +48,7 @@
 
 									<div class="col col--sm-6 col--xl-4">
 										<div class="tip tip--sm mb-0">
-											<div class="tip__media media media--sm bg-trans" style="margin-right: 2.5rem;">
+											<div class="tip__media media media--sm bg-trans" style="margin-right: 3.5rem;">
 												<div class="media__text tx-warning fs-lg">
 
 												<?php

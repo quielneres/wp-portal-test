@@ -1,31 +1,20 @@
-/*@font-face {*/
-/*  font-family: "Geomanist";*/
-/*  font-weight: 200;*/
-/*  src: url("/wp-content/themes/greenplace/fonts/geomanist-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/greenplace/fonts/geomanist-extralight-webfont.woff2") format("woff2"), url("/wp-content/themes/greenplace/fonts/geomanist-extralight-webfont.woff") format("woff"), url("/wp-content/themes/greenplace/fonts/geomanist-extralight-webfont.ttf") format("truetype"), url("/wp-content/themes/greenplace/fonts/geomanist-extralight-webfont.svg#Geomanist") format("svg"); }*/
-
-/*@font-face {*/
-/*  font-family: "Geomanist";*/
-/*  font-weight: 300;*/
-/*  src: url("/wp-content/themes/greenplace/fonts/geomanist-light-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/greenplace/fonts/geomanist-light-webfont.woff2") format("woff2"), url("/wp-content/themes/greenplace/fonts/geomanist-light-webfont.woff") format("woff"), url("/wp-content/themes/greenplace/fonts/geomanist-light-webfont.ttf") format("truetype"), url("/wp-content/themes/greenplace/fonts/geomanist-light-webfont.svg#Geomanist") format("svg"); }*/
-
-/*@font-face {*/
-/*  font-family: "Geomanist";*/
-/*  font-weight: normal;*/
-/*  src: url("/wp-content/themes/greenplace/fonts/geomanist-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/greenplace/fonts/geomanist-regular-webfont.woff2") format("woff2"), url("/wp-content/themes/greenplace/fonts/geomanist-regular-webfont.woff") format("woff"), url("/wp-content/themes/greenplace/fonts/geomanist-regular-webfont.ttf") format("truetype"), url("/wp-content/themes/greenplace/fonts/geomanist-regular-webfont.svg#Geomanist") format("svg"); }*/
-
-/*@font-face {*/
-/*  font-family: "Geomanist";*/
-/*  font-weight: bold;*/
-/*  src: url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.woff2") format("woff2"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.woff") format("woff"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.ttf") format("truetype"), url("/wp-content/themes/greenplace/fonts/geomanist-book-webfont.svg#Geomanist") format("svg"); }*/
-
-/*bloco fontes bb*/
-
 @font-face {
   font-family: BancoDoBrasil;
   src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTextos-Light.ttf');
   font-weight: 200;
 }
 
+@font-face {
+  font-family: BancoDoBrasil;
+  src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTitulos-Medium.ttf');
+  font-weight: 300;
+}
+
+/*@font-face {*/
+/*  font-family: BancoDoBrasil;*/
+/*  src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTextos-Medium.ttf');*/
+/*  font-weight: 300;*/
+/*}*/
 
 @font-face {
   font-family: BancoDoBrasil;
@@ -35,69 +24,9 @@
 
 @font-face {
   font-family: BancoDoBrasil;
-  src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTextos-Medium.ttf');
-  font-weight: 300;
-}
-
-
-@font-face {
-  font-family: BancoDoBrasil;
   src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTextos-Regular.ttf');
   font-weight: normal;
 }
-
-
-
-/*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;700&display=swap');*/
-/*:root {*/
-/*  color: #333;*/
-/*  font-family: 'IBM Plex Sans', sans-serif;*/
-/*  font-size: 16px;*/
-/*  letter-spacing: -.01em;*/
-/*  line-height: 1.5; }*/
-
-
-/*@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;700&display=swap');*/
-/*:root {*/
-/*  color: #333;*/
-/*  font-family: 'Catamaran', sans-serif;*/
-/*  font-size: 16px;*/
-/*  letter-spacing: -.01em;*/
-/*  line-height: 1.5; }*/
-
-/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');*/
-/*:root {*/
-/*  color: #333;*/
-/*  font-family: 'Open Sans', sans-serif;*/
-/*  font-size: 15px;*/
-/*  letter-spacing: -.01em;*/
-/*  line-height: 1.5; }*/
-
-/*@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@200;300;400;600&display=swap');*/
-/*:root {*/
-/*  color: #333;*/
-/*  font-family: 'Commissioner', sans-serif;*/
-/*  font-size: 16px;*/
-/*  letter-spacing: -.01em;*/
-/*  line-height: 1.5; }*/
-
-
-
-/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');*/
-/*:root {*/
-/*  color: #333;*/
-/*  font-family: 'Nunito', sans-serif;*/
-/*  font-size: 15px;*/
-/*  letter-spacing: -.01em;*/
-/*  line-height: 1.5; }*/
-
-/*@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');*/
-/*:root {*/
-/*  color: #333;*/
-/*  font-family: 'Nunito Sans', sans-serif;*/
-/*  font-size: 16px;*/
-/*  letter-spacing: -.01em;*/
-/*  line-height: 1.5; }*/
 
 *,
 ::before,
@@ -116,19 +45,6 @@
   font-size: 15px;
   letter-spacing: -.01em;
   line-height: 1.5; }
-/*:root {*/
-/*  color: #333;*/
-/*  font-family: 'IBM Plex Sans', sans-serif;*/
-/*  font-size: 16px;*/
-/*  letter-spacing: -.01em;*/
-/*  line-height: 1.5; }*/
-
-/*:root {*/
-/*  color: #333;*/
-/*  font-family: 'Caladea', sans-serif;*/
-/*  font-size: 16px;*/
-/*  letter-spacing: -.01em;*/
-/*  line-height: 1.5; }*/
 
 html,
 body {
@@ -146,13 +62,15 @@ html {
   text-size-adjust: 100%; }
 
 body {
-  background-color: #efefef;
+  /*background-color: #efefef;*/
+  background-color: rgba(238, 238, 238, 0.9);
+
   margin: 0; }
 
 a,
 button {
   color: #2c546e;
-  font-weight: bold;
+  font-weight: 300;
   text-decoration: none;
   -webkit-transition: opacity .3s;
   transition: opacity .3s; }
@@ -1461,7 +1379,7 @@ h6,
   -ms-flex-direction: column;
   flex-direction: column;
   font-size: inherit;
-  font-weight: bold;
+  font-weight: 300;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1518,14 +1436,6 @@ h6,
 .nav__link:hover > span {
   opacity: .7; }
 
-/*.layout__foot .media{*/
-/*  display: -webkit-inline-box;*/
-/*  display: -ms-inline-flexbox;*/
-/*  display: inline-flex;*/
-/*  margin-bottom: 1rem;*/
-/*  vertical-align: bottom;*/
-/*}*/
-
 .layout__foot .bg-trans {
   background-color: #F7ADA3;
 }
@@ -1533,12 +1443,15 @@ h6,
 .layout__foot .tx-warning{
   color: #FCFB33;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-top: 1.2rem;
 }
 
 .layout__foot .tip__title {
   color: #052B33;
-  font-weight: bold;
+  font-weight: 300;
+  margin-top: 2.5rem;
+
 }
 
 .layout__foot .media:not(:first-child) {
@@ -1717,7 +1630,7 @@ h6,
   font-size: 1.25rem;
   line-height: 1.5rem; }
 .head__title {
-  font-weight: bold;
+  font-weight: 300;
   text-transform: uppercase; }
 .head__desc {
   opacity: .7; }
@@ -1855,7 +1768,10 @@ a.widget__head {
 .widget__title--upper {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  text-transform: uppercase; }
+  font-weight: 300;
+  text-transform: uppercase;
+
+}
 
 .video {
   width: 100%; }
@@ -1987,7 +1903,10 @@ select.form-select,
   flex-grow: 1; }
 .form-options > .form-label {
   padding-bottom: .5rem;
-  padding-top: .5rem; }
+  padding-top: .5rem;
+  font-weight: normal;
+  color: #000000;
+}
 
 .btn {
   border-radius: 4px;
@@ -2012,7 +1931,7 @@ select.form-select,
   /*background-color: #2c546e;*/
   background-color: #FCFB33;
   color: #052B33;
-  font-weight: bold;
+  font-weight: 300;
 }
 .btn--success {
   background-color: #2f8e84; }
@@ -3598,7 +3517,7 @@ select.form-select,
 .spec__sup {
   color: #052B33;
   font-size: 1.3rem;
-  font-weight: normal;
+  font-weight: 300;
   letter-spacing: -.01em;
   line-height: 1.5rem;
   margin-left: .1rem;

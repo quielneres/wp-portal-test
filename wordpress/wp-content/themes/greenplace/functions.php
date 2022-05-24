@@ -99,6 +99,7 @@ if ( ! function_exists( 'greenplace_setup' ) ) :
 		add_editor_style( 'editor-style.css' );
 
         wp_enqueue_style( 'process', get_template_directory_uri() . '/css/process.css',false,'1.1','all');
+        wp_enqueue_style( 'guide', get_template_directory_uri() . '/css/guide.css',false,'1.1','all');
 	}
 endif;
 add_action( 'after_setup_theme', 'greenplace_setup' );
@@ -193,6 +194,8 @@ function greenplace_scripts() {
 
 	wp_enqueue_script( 'greenplace-menu-fix', get_template_directory_uri() . '/js/menu-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'greenplace-tab-guide', get_template_directory_uri() . '/js/tab-guide.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'greenplace-contract', get_template_directory_uri() . '/js/contract.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'greenplace-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -248,6 +251,11 @@ function get_questions_faq($category): array {
 function get_process($category): array {
     $process = new Process();
     return $process->list_process($category);
+}
+
+function get_guides($category): array {
+    $process = new Guide();
+    return $process->list_guides($category);
 }
 
 
@@ -318,3 +326,4 @@ require get_template_directory() . '/inc/widgets/widget-important.php';
 require get_template_directory() . '/inc/controllers/ProfessionalProfiles.php';
 require get_template_directory() . '/inc/controllers/Questions.php';
 require get_template_directory() . '/inc/controllers/Process.php';
+require get_template_directory() . '/inc/controllers/Guide.php';

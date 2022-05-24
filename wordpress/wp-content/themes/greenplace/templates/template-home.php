@@ -44,7 +44,7 @@ get_header();
                 }
 
                 .desc-time-line {
-                    padding-bottom: 65px
+                    padding-bottom: 2.88rem
                 }
 
                 .text-profile{
