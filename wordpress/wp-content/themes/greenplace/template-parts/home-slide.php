@@ -22,8 +22,8 @@ $bulletins = new WP_Query( array(
 
 						while ( $bulletins->have_posts() ) : $bulletins->the_post();
 						?>
-							<li class="glide__slide">
-								<div class="glide__img" style="background-image: url(<?php echo the_field( 'background' ); ?>)"></div>
+							<li class="glide__slide" data-link="<?php the_permalink(); ?>" style="cursor: pointer">
+								<div class="glide__img" style="background-image: url('<?php echo the_field( 'background' ); ?>')"></div>
 								<div class="row middle-xs fx-grow">
 									<div class="col col--md-12">
 										<h1 class="head head--xl">
@@ -32,7 +32,6 @@ $bulletins = new WP_Query( array(
 
 										<?php the_excerpt(); ?>
 
-										<a class="btn btn--warning" href="<?php the_permalink(); ?>">Saiba Mais</a>
 									</div>
 								</div>
 							</li>
@@ -59,3 +58,11 @@ $bulletins = new WP_Query( array(
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+    jQuery( function($) {
+        $('.glide__track > ul > li').click(function () {
+            $(location).attr('href', $(this).data('link'));
+        })
+    } );
+</script>
