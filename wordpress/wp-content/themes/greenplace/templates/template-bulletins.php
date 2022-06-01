@@ -116,26 +116,7 @@ $posts = new WP_Query( array(
 				) );
 			endif;
 		?>
-
-		<!-- <ol class="pagination pagination--center mb-5">
-			<li class="pagination__item"><span class="pagination__text" href="">Anterior</span></li>
-			<li class="pagination__item"><a class="pagination__action" href="">1</a></li>
-			<li class="pagination__item"><a class="pagination__action" href="">2</a></li>
-			<li class="pagination__item"><a class="pagination__action" href="">3</a></li>
-			<li class="pagination__item"><span class="pagination__text"><i class="i i--more"></i></span></li>
-			<li class="pagination__item"><a class="pagination__action" href="">7</a></li>
-			<li class="pagination__item is-active"><a class="pagination__action" href="">8</a></li>
-			<li class="pagination__item"><a class="pagination__action" href="">9</a></li>
-			<li class="pagination__item"><span class="pagination__text"><i class="i i--more"></i></span></li>
-			<li class="pagination__item"><a class="pagination__action" href="">13</a></li>
-			<li class="pagination__item"><a class="pagination__action" href="">14</a></li>
-			<li class="pagination__item"><a class="pagination__action" href="">15</a></li>
-			<li class="pagination__item"><a class="pagination__link" href="">Próxima</a></li>
-		</ol> -->
-
 	</div>
-
-	<?php get_template_part( 'template-parts/content-call-contact', get_post_type() ); ?>
 </main>
 
 <?php get_footer(); ?>
