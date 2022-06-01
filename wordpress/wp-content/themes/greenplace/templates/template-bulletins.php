@@ -27,7 +27,7 @@ $posts = new WP_Query( array(
 <main class="layout__body">
 	<?php get_template_part( 'template-parts/page-headline', get_post_type() ); ?>
 
-	<div class="container pt-4 pb-2 fx-grow">
+	<div class="container pt-4 pb-2 fx-grow content__bulletins">
 		<h2 class="h3">Em Destaque</h2>
 		<div class="fx">
 			<?php
@@ -37,7 +37,7 @@ $posts = new WP_Query( array(
 					?>
 
 						<div class="widget row" style="overflow: hidden">
-							<a class="widget__head aspect-ratio aspect-ratio--16x9 cover cover--center bg-blue col col--md-5" href="<?php the_permalink(); ?>">
+							<a class="widget__head aspect-ratio aspect-ratio--16x9 cover cover--center dark-purple col col--md-5" href="<?php the_permalink(); ?>">
 								<div class="cover__img" style="background-image: url(<?php the_field( 'background' ); ?>)"></div>
 
 								<div class="aspect-ratio__content">
@@ -78,7 +78,7 @@ $posts = new WP_Query( array(
 
 						<div class="col col--md-4 fx">
 							<div class="widget fx-grow">
-								<a class="widget__head aspect-ratio aspect-ratio--16x9 cover cover--center bg-blue" href="<?php the_permalink(); ?>">
+								<a class="widget__head aspect-ratio aspect-ratio--16x9 cover cover--center dark-purple" href="<?php the_permalink(); ?>">
 									<div class="cover__img" style="background-image: url(<?php the_field( 'background' ); ?>)"></div>
 									<div class="aspect-ratio__content pos pos--bottom">
 										<h1 class="head head--sm">

@@ -3707,3 +3707,9 @@ select.form-select,
 .content__panels .widget__body a, button{
   color: #052B4C;
 }
+
+.content__bulletins .widget__body a, button{
+  color: #052B4C;
+}
+
+
