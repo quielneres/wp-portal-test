@@ -2405,6 +2405,11 @@ select.form-select,
   background-color: #2c546e;
   color: #fff; }
 
+.content__contract .bg-blue {
+  background-color: #BDB6FF;
+  color: #fff;
+}
+
 .bg-leaf {
   /*background-image: -webkit-gradient(linear, right top, left top, from(#2f8e84), to(#2c546e));*/
   /*background-image: linear-gradient(to left, #2f8e84, #2c546e);*/

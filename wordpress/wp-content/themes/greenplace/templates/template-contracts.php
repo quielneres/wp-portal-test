@@ -219,7 +219,7 @@ if ($system) {
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 					?>
 
-					<div class="col col--md-6 col--lg-4">
+					<div class="col col--md-6 col--lg-4 content__contract">
 						<a class="widget" href="<?php the_permalink(); ?>">
 							<div class="widget__head aspect-ratio aspect-ratio--25x9 cover cover--top bg-blue">
 								<div class="cover__img"></div>
