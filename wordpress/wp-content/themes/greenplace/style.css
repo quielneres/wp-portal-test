@@ -2405,8 +2405,13 @@ select.form-select,
   background-color: #2c546e;
   color: #fff; }
 
-.content__contract .bg-blue {
+.light-purple {
   background-color: #BDB6FF;
+  color: #000000;
+}
+
+.dark-purple {
+  background-color: #735CC6;
   color: #fff;
 }
 
@@ -3585,11 +3590,18 @@ select.form-select,
   font-size: .94rem;
   font-weight: normal;
   margin-bottom: 1rem; }
+
+
 .info__title {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   opacity: .7; }
+
+.content__contract .info__title, .info__desc{
+  opacity: unset;
+  color: #0c0c0c;
+}
 
 .gotop {
   background-color: #57c7bb;
@@ -3690,4 +3702,8 @@ select.form-select,
   font-size: 20px;
   font-weight: 700;
   width: 32px;
+}
+
+.content__panels .widget__body a, button{
+  color: #052B4C;
 }

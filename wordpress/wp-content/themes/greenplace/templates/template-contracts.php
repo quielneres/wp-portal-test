@@ -221,7 +221,7 @@ if ($system) {
 
 					<div class="col col--md-6 col--lg-4 content__contract">
 						<a class="widget" href="<?php the_permalink(); ?>">
-							<div class="widget__head aspect-ratio aspect-ratio--25x9 cover cover--top bg-blue">
+							<div class="widget__head aspect-ratio aspect-ratio--25x9 cover cover--top light-purple">
 								<div class="cover__img"></div>
 								<div class="aspect-ratio__content pos pos--bottom">
 									<h1 class="head head--sm"><span class="head__title"><?php the_title(); ?></span></h1>
