@@ -31,11 +31,11 @@ foreach ($guides as $guide): ?>
 
         <div class="row">
             <div class="col col--sm">
+
+               <?php if ($get_guides['two_next_guides']->have_posts()): ?>
                 <h5>Versões anteriores:</h5>
                 <div class="mb-3 previous-versions">
                     <?php
-                    if ($get_guides['two_next_guides']->have_posts()):
-
                         while ($get_guides['two_next_guides']->have_posts()) : $get_guides['two_next_guides']->the_post();
                             ?>
 
@@ -45,11 +45,12 @@ foreach ($guides as $guide): ?>
                             </a>
                         <?php endwhile;
 
-                    endif;
                     wp_reset_postdata();
                     ?>
                 </div>
-
+              <?php  else: ?>
+                    <div style="padding: 2.65rem"></div>
+               <?php endif;?>
             </div>
         </div>
     </div>

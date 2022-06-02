@@ -309,6 +309,8 @@ require get_template_directory() . '/post-types/panel.php';
 require get_template_directory() . '/post-types/question.php';
 require get_template_directory() . '/post-types/bulletin.php';
 require get_template_directory() . '/post-types/guide.php';
+//require get_template_directory() . '/post-types/acionamento.php';
+require get_template_directory() . '/post-types/guide-acionamento.php';
 require get_template_directory() . '/post-types/user.php';
 require get_template_directory() . '/post-types/team.php';
 require get_template_directory() . '/post-types/simple.php';

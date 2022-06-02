@@ -3704,12 +3704,9 @@ select.form-select,
   width: 32px;
 }
 
-.content__panels .widget__body a, button{
+.link--panels, .links__bulletins{
   color: #052B4C;
 }
 
-.content__bulletins .widget__body a, button{
-  color: #052B4C;
-}
 
 

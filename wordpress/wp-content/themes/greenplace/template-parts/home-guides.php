@@ -1,4 +1,4 @@
-<?php $args = ['acionamento', 'fsw']; ?>
+<?php $args = ['guide-acionamento', 'guide']; ?>
 
 <div class="row widget" style="overflow: hidden">
     <div class="tabs__guide">

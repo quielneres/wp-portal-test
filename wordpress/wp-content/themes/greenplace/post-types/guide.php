@@ -30,7 +30,7 @@ function guide_init() {
 			'not_found'             => __( 'No guides found', 'greenplace' ),
 			'not_found_in_trash'    => __( 'No guides found in trash', 'greenplace' ),
 			'parent_item_colon'     => __( 'Parent Guide:', 'greenplace' ),
-			'menu_name'             => __( 'Guides', 'greenplace' ),
+			'menu_name'             => __( 'Guides Fábrica', 'greenplace' ),
 		),
 		'public'                => true,
 		'hierarchical'          => false,

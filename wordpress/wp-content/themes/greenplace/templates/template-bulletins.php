@@ -47,7 +47,7 @@ $posts = new WP_Query( array(
 
 							<div class="widget__body col col--md-7">
 								<h3 class="h2 mb-2">
-									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+									<a class="links__bulletins" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</h3>
 
 								<ul class="meta row">

@@ -3,7 +3,7 @@
 
         <div class="col col--md-6 widget__body">
             <h3 class="h4">
-                <a href="<?php the_field( 'url' ); ?>" target="_blank"><?php the_title(); ?></a>
+                <a href="<?php the_field( 'url' ); ?>" class="link--panels" target="_blank"><?php the_title(); ?></a>
             </h3>
 
             <div class="tx-sm"><?php the_content(); ?></div>
