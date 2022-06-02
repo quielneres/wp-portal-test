@@ -1935,6 +1935,12 @@ select.form-select,
 }
 .btn--success {
   background-color: #2f8e84; }
+
+.btn--cf7--success {
+  background-color: #FCFB33;
+  color: #052B33;
+  font-weight: 300;
+}
 .btn--warning {
   background-color: #f8d117;
   color: #222; }
