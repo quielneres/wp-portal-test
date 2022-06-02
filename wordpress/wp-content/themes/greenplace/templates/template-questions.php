@@ -61,8 +61,6 @@ $categories = [
 
         </div>
     </div>
-
-    <?php get_template_part('template-parts/content-call-contact', get_post_type()); ?>
 </main>
 
 <?php get_footer(); ?>
