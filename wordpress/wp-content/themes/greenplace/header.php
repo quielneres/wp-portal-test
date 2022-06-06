@@ -44,22 +44,22 @@
 									<a class="brand has-pill" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 										<figure class="brand__logo">
 
-											 <img class="brand__img" src="http://portal.stt.intranet.bb.com.br/wp-content/uploads/cropped-LOGO-PORTAL1.png" alt="Banco do Brasil">
+											<!-- <img class="brand__img" src="<?php echo get_template_directory_uri(); ?>/img/icon-bb.svg" alt="Banco do Brasil">-->
 
-<!--											--><?php
-//												$custom_logo_id = get_theme_mod( 'custom_logo' );
-//												$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-//												$url_logo = $logo[0];
-//
-//												if ( has_custom_logo() ) {
-//													echo '<img class="brand__img" src="' . esc_url( $url_logo ) . '" alt="Banco do Brasil">';
-//
-//												} else {
-//													?>
-<!--											        <img class="brand__img" src="--><?php //echo get_template_directory_uri(); ?><!--/img/icon-bb.svg" alt="Banco do Brasil">-->
-<!--													--><?php
-//												}
-//											?>
+											<?php
+												$custom_logo_id = get_theme_mod( 'custom_logo' );
+												$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+												$url_logo = $logo[0];
+
+												if ( has_custom_logo() ) {
+													echo '<img class="brand__img" src="' . esc_url( $url_logo ) . '" alt="Banco do Brasil">';
+
+												} else {
+													?>
+											        <img class="brand__img" src="<?php echo get_template_directory_uri(); ?>/img/icon-bb.svg" alt="Banco do Brasil">
+													<?php
+												}
+											?>
 										</figure>
 
 										<h1 class="brand__text">

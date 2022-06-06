@@ -20,20 +20,20 @@ $posts = get_posts( array(
 	<div class="container pt-4 pb-2 fx-grow">
 		<div class="row row--padded">
 			<?php
-				if ( $posts ):
+			if ( $posts ):
 
-					foreach($posts as $post):
+				foreach($posts as $post):
 
-						setup_postdata( $post )
-						?>
+					setup_postdata( $post )
+					?>
 
-                        <?php get_template_part( 'template-parts/content-panels-body', get_post_type() ); ?>
+					<?php get_template_part( 'template-parts/content-panels-body', get_post_type() ); ?>
 
-					<?php endforeach;
+				<?php endforeach;
 
-				endif;
+			endif;
 
-				wp_reset_postdata();
+			wp_reset_postdata();
 			?>
 		</div>
 	</div>

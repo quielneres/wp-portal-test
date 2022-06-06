@@ -16,8 +16,8 @@ get_header();
 		<div class="row row--padded">
 
 			<div class="col col--md-8">
-                <?php get_template_part('template-parts/content-list-process', ''); ?>
-            </div>
+				<?php get_template_part('template-parts/content-list-process', ''); ?>
+			</div>
 
 			<div class="col col--md-4">
 				<?php dynamic_sidebar( 'process-sidebar-1' ); ?>

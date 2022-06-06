@@ -31,39 +31,39 @@ $posts = new WP_Query( array(
 		<h2 class="h3">Em Destaque</h2>
 		<div class="fx">
 			<?php
-				if ( $featured->have_posts() ):
+			if ( $featured->have_posts() ):
 
-					while ( $featured->have_posts() ) : $featured->the_post();
+				while ( $featured->have_posts() ) : $featured->the_post();
 					?>
 
-						<div class="widget row" style="overflow: hidden">
-							<a class="widget__head aspect-ratio aspect-ratio--16x9 cover cover--center dark-purple col col--md-5" href="<?php the_permalink(); ?>">
-								<div class="cover__img" style="background-image: url(<?php the_field( 'background' ); ?>)"></div>
+					<div class="widget row" style="overflow: hidden">
+						<a class="widget__head aspect-ratio aspect-ratio--16x9 cover cover--center dark-purple col col--md-5" href="<?php the_permalink(); ?>">
+							<div class="cover__img" style="background-image: url(<?php the_field( 'background' ); ?>)"></div>
 
-								<div class="aspect-ratio__content">
-									<div class="pos pos--center pos--middle"><i class="i i--announcement fs-big"></i></div>
-								</div>
-							</a>
-
-							<div class="widget__body col col--md-7">
-								<h3 class="h2 mb-2">
-									<a class="links__bulletins" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								</h3>
-
-								<ul class="meta row">
-									<li class="meta__item col col--md-6">Por <?php echo get_the_author_meta( 'display_name' ); ?></li>
-									<li class="meta__item col col--md-6 end-sm"><?php the_date(); ?></li>
-								</ul>
-
-								<div class="tx-sm"><?php the_excerpt(); ?></div>
+							<div class="aspect-ratio__content">
+								<div class="pos pos--center pos--middle"><i class="i i--announcement fs-big"></i></div>
 							</div>
+						</a>
+
+						<div class="widget__body col col--md-7">
+							<h3 class="h2 mb-2">
+								<a class="links__bulletins" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+							</h3>
+
+							<ul class="meta row">
+								<li class="meta__item col col--md-6">Por <?php echo get_the_author_meta( 'display_name' ); ?></li>
+								<li class="meta__item col col--md-6 end-sm"><?php the_date(); ?></li>
+							</ul>
+
+							<div class="tx-sm"><?php the_excerpt(); ?></div>
 						</div>
+					</div>
 
-						<?php endwhile;
+				<?php endwhile;
 
-				endif;
+			endif;
 
-				wp_reset_postdata();
+			wp_reset_postdata();
 			?>
 		</div>
 
@@ -71,50 +71,50 @@ $posts = new WP_Query( array(
 
 		<div class="row row--padded">
 			<?php
-				if ( $posts->have_posts() ):
+			if ( $posts->have_posts() ):
 
-					while ( $posts->have_posts() ) : $posts->the_post();
+				while ( $posts->have_posts() ) : $posts->the_post();
 					?>
 
-						<div class="col col--md-4 fx">
-							<div class="widget fx-grow">
-								<a class="widget__head aspect-ratio aspect-ratio--16x9 cover cover--center dark-purple" href="<?php the_permalink(); ?>">
-									<div class="cover__img" style="background-image: url(<?php the_field( 'background' ); ?>)"></div>
-									<div class="aspect-ratio__content pos pos--bottom">
-										<h1 class="head head--sm">
-											<span class="head__title"><?php the_title(); ?></span>
-										</h1>
-									</div>
-								</a>
-
-								<div class="widget__body pt-3">
-									<ul class="meta row">
-										<li class="meta__item col col--md-6">Por <?php echo get_the_author_meta( 'display_name' ); ?></li>
-										<li class="meta__item col col--md-6 end-sm"><?php the_date(); ?></li>
-									</ul>
-
-									<?php the_excerpt(); ?>
+					<div class="col col--md-4 fx">
+						<div class="widget fx-grow">
+							<a class="widget__head aspect-ratio aspect-ratio--16x9 cover cover--center dark-purple" href="<?php the_permalink(); ?>">
+								<div class="cover__img" style="background-image: url(<?php the_field( 'background' ); ?>)"></div>
+								<div class="aspect-ratio__content pos pos--bottom">
+									<h1 class="head head--sm">
+										<span class="head__title"><?php the_title(); ?></span>
+									</h1>
 								</div>
+							</a>
+
+							<div class="widget__body pt-3">
+								<ul class="meta row">
+									<li class="meta__item col col--md-6">Por <?php echo get_the_author_meta( 'display_name' ); ?></li>
+									<li class="meta__item col col--md-6 end-sm"><?php the_date(); ?></li>
+								</ul>
+
+								<?php the_excerpt(); ?>
 							</div>
 						</div>
+					</div>
 
-					<?php endwhile;
+				<?php endwhile;
 
-				endif;
+			endif;
 
-				wp_reset_postdata();
+			wp_reset_postdata();
 			?>
 		</div>
 
 		<?php
-			if (function_exists('wp_pagenavi')):
-				wp_pagenavi( array(
-					'wrapper_class' => 'pagination pagination--center mb-5',
-					// 'wrapper_tag' => 'ol',
-					'query' => $posts,
-					'type' => 'bulletin'
-				) );
-			endif;
+		if (function_exists('wp_pagenavi')):
+			wp_pagenavi( array(
+				'wrapper_class' => 'pagination pagination--center mb-5',
+				// 'wrapper_tag' => 'ol',
+				'query' => $posts,
+				'type' => 'bulletin'
+			) );
+		endif;
 		?>
 	</div>
 </main>

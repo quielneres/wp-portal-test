@@ -18,28 +18,28 @@ $bulletins = new WP_Query( array(
 		<div class="glide__track" data-glide-el="track">
 			<ul class="glide__slides">
 				<?php
-					if ( $bulletins->have_posts() ):
+				if ( $bulletins->have_posts() ):
 
-						while ( $bulletins->have_posts() ) : $bulletins->the_post();
+					while ( $bulletins->have_posts() ) : $bulletins->the_post();
 						?>
-							<li class="glide__slide" data-link="<?php the_permalink(); ?>" style="cursor: pointer">
-								<div class="glide__img" style="background-image: url('<?php echo the_field( 'background' ); ?>')"></div>
-								<div class="row middle-xs fx-grow">
-									<div class="col col--md-12">
-										<h1 class="head head--xl">
-											<span class="head__title" style="text-transform: none"><?php the_title(); ?></span>
-										</h1>
+						<li class="glide__slide" data-link="<?php the_permalink(); ?>" style="cursor: pointer">
+							<div class="glide__img" style="background-image: url('<?php echo the_field( 'background' ); ?>')"></div>
+							<div class="row middle-xs fx-grow">
+								<div class="col col--md-12">
+									<h1 class="head head--xl">
+										<span class="head__title" style="text-transform: none"><?php the_title(); ?></span>
+									</h1>
 
-										<?php the_excerpt(); ?>
+									<?php the_excerpt(); ?>
 
-									</div>
 								</div>
-							</li>
-						<?php endwhile;
+							</div>
+						</li>
+					<?php endwhile;
 
-					endif;
+				endif;
 
-					wp_reset_postdata();
+				wp_reset_postdata();
 				?>
 			</ul>
 		</div>
@@ -60,9 +60,9 @@ $bulletins = new WP_Query( array(
 </div>
 
 <script type="text/javascript">
-    jQuery( function($) {
-        $('.glide__track > ul > li').click(function () {
-            $(location).attr('href', $(this).data('link'));
-        })
-    } );
+	jQuery( function($) {
+		$('.glide__track > ul > li').click(function () {
+			$(location).attr('href', $(this).data('link'));
+		})
+	} );
 </script>
