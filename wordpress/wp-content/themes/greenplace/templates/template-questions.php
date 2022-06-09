@@ -17,12 +17,8 @@ $questions = get_posts(array(
 	'order' => 'ASC'
 ));
 
-$categories = [
-	'ustibb' => 'USTIBB',
-	'contrato' => 'Contrato',
-	'of' => 'Outros',
-	'acionamento_empresas' => 'Acionamento de empresas'
-]
+$categories = get_question_category();
+
 ?>
 <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 
@@ -32,9 +28,8 @@ $categories = [
 	<div class="container pt-4 pb-2 fx-grow">
 		<div class="content">
 
-			<?php foreach ($categories as $index => $value): ?>
-
-
+			<?php foreach ($categories[0] as $index => $value):
+                if($index != 'of'):?>
 				<div class="content__body question ">
 
 					<a class="question__id question__link question__icon__index question__link__index index_question"
@@ -57,7 +52,9 @@ $categories = [
 					</div>
 				</div>
 
-			<?php endforeach; ?>
+			<?php endif;
+
+			 endforeach; ?>
 
 		</div>
 	</div>

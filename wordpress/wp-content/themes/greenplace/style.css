@@ -69,7 +69,8 @@ body {
 
 a,
 button {
-  color: #2c546e;
+  /*color: #2c546e;*/
+  color: #455AFF;
   font-weight: 300;
   text-decoration: none;
   -webkit-transition: opacity .3s;
@@ -2408,7 +2409,8 @@ select.form-select,
   color: #fff; }
 
 .bg-blue {
-  background-color: #2c546e;
+  /*background-color: #2c546e;*/
+  background-color: #735CC6;
   color: #fff; }
 
 .light-purple {

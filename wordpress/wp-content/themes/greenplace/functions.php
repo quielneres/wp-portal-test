@@ -289,6 +289,25 @@ function dynamic_select_form_contact ( $scanned_tag, $replace ) {
 
 add_filter( 'wpcf7_form_tag', 'dynamic_select_form_contact', 10, 2);
 
+function get_question_category(): array {
+
+    $raw_fields = acf_get_raw_fields( 456 );
+
+    $category_field = array_filter($raw_fields, function($filed) {
+        if ($filed['name'] == 'category') {
+            return $filed;
+        }
+    });
+
+    $arr_category = [];
+
+    foreach ($category_field as $field) {
+        $arr_category[] = $field['choices'];
+    }
+
+    return $arr_category;
+}
+
 /**
  * Implement the Custom Header feature.
  */
@@ -359,3 +378,4 @@ require get_template_directory() . '/inc/controllers/ProfessionalProfiles.php';
 require get_template_directory() . '/inc/controllers/Questions.php';
 require get_template_directory() . '/inc/controllers/Process.php';
 require get_template_directory() . '/inc/controllers/Guide.php';
+
