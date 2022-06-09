@@ -98,8 +98,8 @@ if ( ! function_exists( 'greenplace_setup' ) ) :
 		// Enqueue editor styles.
 		add_editor_style( 'editor-style.css' );
 
-        wp_enqueue_style( 'process', get_template_directory_uri() . '/css/process.css',false,'1.1','all');
-        wp_enqueue_style( 'guide', get_template_directory_uri() . '/css/guide.css',false,'1.1','all');
+		wp_enqueue_style( 'process', get_template_directory_uri() . '/css/process.css',false,'1.1','all');
+		wp_enqueue_style( 'guide', get_template_directory_uri() . '/css/guide.css',false,'1.1','all');
 	}
 endif;
 add_action( 'after_setup_theme', 'greenplace_setup' );
@@ -188,7 +188,7 @@ function greenplace_scripts() {
 
 	wp_enqueue_script( 'greenplace-glide', get_template_directory_uri() . '/js/glide.js', array(), '20151215', true );
 
-    wp_enqueue_script( 'greenplace-questions', get_template_directory_uri() . '/js/questions.js', array(), '20151215', true );
+	wp_enqueue_script( 'greenplace-questions', get_template_directory_uri() . '/js/questions.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'greenplace-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -249,15 +249,64 @@ function get_questions_faq($category): array {
 }
 
 function get_process($category): array {
-    $process = new Process();
-    return $process->list_process($category);
+	$process = new Process();
+	return $process->list_process($category);
 }
 
 function get_guides($category): array {
-    $process = new Guide();
-    return $process->list_guides($category);
+	$process = new Guide();
+	return $process->list_guides($category);
 }
 
+
+function dynamic_select_form_contact ( $scanned_tag, $replace ) {
+
+	if ( $scanned_tag['name'] != 'empresas' )
+		return $scanned_tag;
+
+	$rows = get_posts( array(
+		'post_type'      => 'company',
+		'posts_per_page' => -1,
+		'orderby'        => 'title',
+		'order'          => 'ASC'
+	) );
+
+	if ( ! $rows )
+		return $scanned_tag;
+
+	foreach ( $rows as $row ) {
+		$scanned_tag['raw_values'][] = $row->post_title . '|' . $row->post_title;
+	}
+
+	$pipes = new WPCF7_Pipes($scanned_tag['raw_values']);
+
+	$scanned_tag['values'] = $pipes->collect_befores();
+	$scanned_tag['labels'] = $pipes->collect_afters();
+	$scanned_tag['pipes'] = $pipes;
+
+	return $scanned_tag;
+}
+
+add_filter( 'wpcf7_form_tag', 'dynamic_select_form_contact', 10, 2);
+
+function get_question_category(): array {
+
+    $raw_fields = acf_get_raw_fields( 456 );
+
+    $category_field = array_filter($raw_fields, function($filed) {
+        if ($filed['name'] == 'category') {
+            return $filed;
+        }
+    });
+
+    $arr_category = [];
+
+    foreach ($category_field as $field) {
+        $arr_category[] = $field['choices'];
+    }
+
+    return $arr_category;
+}
 
 /**
  * Implement the Custom Header feature.
@@ -309,6 +358,8 @@ require get_template_directory() . '/post-types/panel.php';
 require get_template_directory() . '/post-types/question.php';
 require get_template_directory() . '/post-types/bulletin.php';
 require get_template_directory() . '/post-types/guide.php';
+//require get_template_directory() . '/post-types/acionamento.php';
+require get_template_directory() . '/post-types/guide-acionamento.php';
 require get_template_directory() . '/post-types/user.php';
 require get_template_directory() . '/post-types/team.php';
 require get_template_directory() . '/post-types/simple.php';
@@ -327,3 +378,4 @@ require get_template_directory() . '/inc/controllers/ProfessionalProfiles.php';
 require get_template_directory() . '/inc/controllers/Questions.php';
 require get_template_directory() . '/inc/controllers/Process.php';
 require get_template_directory() . '/inc/controllers/Guide.php';
+

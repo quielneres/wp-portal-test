@@ -49,8 +49,8 @@ $companies = get_posts( array(
 				<div class="form-select">
 					<select name="system_id">
 						<option value="" hidden="true">Selecione uma opção</option>
-                        <option value="acionamento" >Acionamento</option>
-                        <option value="fsw">Fábrica de Software</option>
+						<option value="acionamento" >Acionamento</option>
+						<option value="fsw">Fábrica de Software</option>
 					</select>
 				</div>
 			</div>

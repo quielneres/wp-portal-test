@@ -30,7 +30,7 @@ function guide_init() {
 			'not_found'             => __( 'No guides found', 'greenplace' ),
 			'not_found_in_trash'    => __( 'No guides found in trash', 'greenplace' ),
 			'parent_item_colon'     => __( 'Parent Guide:', 'greenplace' ),
-			'menu_name'             => __( 'Guides', 'greenplace' ),
+			'menu_name'             => __( 'Guides Fábrica', 'greenplace' ),
 		),
 		'public'                => true,
 		'hierarchical'          => false,
@@ -77,7 +77,7 @@ function guide_updated_messages( $messages ) {
 		8  => sprintf( __( 'Guide submitted. <a target="_blank" href="%s">Preview guide</a>', 'greenplace' ), esc_url( add_query_arg( 'preview', 'true', $permalink ) ) ),
 		/* translators: 1: Publish box date format, see https://secure.php.net/date 2: Post permalink */
 		9  => sprintf( __( 'Guide scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview guide</a>', 'greenplace' ),
-		date_i18n( __( 'M j, Y @ G:i', 'greenplace' ), strtotime( $post->post_date ) ), esc_url( $permalink ) ),
+			date_i18n( __( 'M j, Y @ G:i', 'greenplace' ), strtotime( $post->post_date ) ), esc_url( $permalink ) ),
 		/* translators: %s: post permalink */
 		10 => sprintf( __( 'Guide draft updated. <a target="_blank" href="%s">Preview guide</a>', 'greenplace' ), esc_url( add_query_arg( 'preview', 'true', $permalink ) ) ),
 	);

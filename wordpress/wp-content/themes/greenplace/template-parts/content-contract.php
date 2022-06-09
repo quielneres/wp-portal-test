@@ -221,7 +221,7 @@ $contracts = new WP_Query( array(
 				<?php endif; ?>
 			</div>
 
-			<div class="col col--md-4">
+			<div class="col col--md-4 content-same-company">
 				<h2 class="h4">Contratos com a mesma empresa</h2>
 
 				<?php
@@ -230,7 +230,7 @@ $contracts = new WP_Query( array(
 					while ( $contracts->have_posts() ) : $contracts->the_post(); ?>
 
 						<a class="widget" href="<?php the_permalink(); ?>">
-							<div class="widget__head aspect-ratio aspect-ratio--25x9 cover cover--top bg-blue">
+							<div class="widget__head aspect-ratio aspect-ratio--25x9 cover cover--top light-purple">
 								<div class="cover__img"></div>
 								<div class="aspect-ratio__content pos pos--bottom">
 									<h1 class="head head--sm"><span class="head__title"><?php the_title(); ?></span></h1>
@@ -262,8 +262,6 @@ $contracts = new WP_Query( array(
 			</div>
 		</div>
 	</div>
-
-	<?php get_template_part( 'template-parts/content-call-contact', get_post_type() ); ?>
 </main>
 
 <script>
