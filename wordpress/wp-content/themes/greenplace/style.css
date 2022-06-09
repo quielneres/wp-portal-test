@@ -3606,6 +3606,11 @@ select.form-select,
   flex-grow: 1;
   opacity: .7; }
 
+.content-same-company .info__title, .info__desc{
+  opacity: unset;
+  color: #0c0c0c;
+}
+
 .content__contract .info__title, .info__desc{
   opacity: unset;
   color: #0c0c0c;
