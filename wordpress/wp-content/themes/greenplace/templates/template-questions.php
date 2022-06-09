@@ -8,17 +8,6 @@
 
 get_header();
 
-$questions = get_posts(array(
-	'post_type' => 'question',
-	'posts_per_page' => -1,
-	'meta_key' => 'category',
-	'meta_value' => 'of',
-	'orderby' => 'meta_value',
-	'order' => 'ASC'
-));
-
-$categories = get_question_category();
-
 ?>
 <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 
@@ -28,7 +17,7 @@ $categories = get_question_category();
 	<div class="container pt-4 pb-2 fx-grow">
 		<div class="content">
 
-			<?php foreach ($categories[0] as $index => $value):
+			<?php foreach ( get_question_category() as $index => $value):
                 if($index != 'of'):?>
 				<div class="content__body question ">
 

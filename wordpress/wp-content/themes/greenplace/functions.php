@@ -305,7 +305,7 @@ function get_question_category(): array {
         $arr_category[] = $field['choices'];
     }
 
-    return $arr_category;
+    return $arr_category[0];
 }
 
 /**
