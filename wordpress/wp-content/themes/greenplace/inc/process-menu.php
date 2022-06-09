@@ -147,7 +147,7 @@ function process_menu($location = "main_menu", $css_class_prefix = 'main-menu', 
     $args = array(
         'theme_location'    => $location,
         'container'         => false,
-        'items_wrap'        => '<ul class="' . $css_class_prefix . ' ' . $modifiers . '">%3$s</ul>',
+        'items_wrap'        => '<ul class="' . $css_class_prefix . ' ' . $modifiers . ' list__process">%3$s</ul>',
         'walker'            => new Walker_Process_Menu($css_class_prefix, true)
     );
 

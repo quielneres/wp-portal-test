@@ -3721,5 +3721,58 @@
     color: #455AFF;
   }
 
+  .prifiles-collaborators .comb-select {
+    /*background-color: red;*/
+    max-height: 12rem;
+    min-height: 7rem;
+    padding: 0 0 0 0;
+    margin: 4rem 0 0.85rem 0;
+  }
 
+  .prifiles-collaborators .desc-time-line {
+    padding-bottom: 2.88rem
+  }
+
+  .prifiles-collaborators .text-profile{
+    margin-top: 0.9rem;
+  }
+  .prifiles-collaborators .text-select-profile{
+    margin-top: 2rem;
+  }
+
+  .figure-learn-process {
+    position: initial;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+  }
+
+  @media only screen and (min-width: 576px) {
+    .figure-learn-process {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0;
+    }
+  }
+
+  .figure-learn-process .widget__figure {
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .desc-welcome-collaborator {
+    font-size: 0.95rem;
+  }
+
+  .list--dot > .list__item::before {
+    color: #F97A70;
+    margin-top: -0.19rem;
+    font-size: 2.5rem;
+  }
+
+  .list__process .list__link{
+    color: #455AFF;
+    font-weight: normal;
+  }
 
