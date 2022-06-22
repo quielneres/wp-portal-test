@@ -26,9 +26,11 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 /** O nome do banco de dados do WordPress */
 //define( 'DB_NAME', 'fabricaSoftwareHm' );
 //define( 'DB_NAME', 'fabricaSoftwareDev' );
+//define( 'DB_NAME', 'fabrica_software' );
 define( 'DB_NAME', 'stt-fabrica-local' );
 
 /** Usuário do banco de dados MySQL */
+//define( 'DB_USER', 'user_fabrica_software' );
 //define( 'DB_USER', 'user_fabrica_software' );
 define( 'DB_USER', 'ezequiel' );
 
@@ -36,11 +38,13 @@ define( 'DB_USER', 'ezequiel' );
 //define( 'DB_PASSWORD', 'f4br1c4S0ftw4r3Hm' );
 //define( 'DB_PASSWORD', 'U$3R_f4br1c4S0ftw4reDe3v' );
 //define( 'DB_PASSWORD', 'U$3R_f4br1c4S0ftw4reDe3v' );
+//define( 'DB_PASSWORD', 'CgWRoSda' );
 define( 'DB_PASSWORD', '458261' );
 
 /** Nome do host do MySQL */
 //define( 'DB_HOST', 'silo01.mysql.bdh.hm.bb.com.br' );
 //define( 'DB_HOST', 'silo01.mysql.bdh.desenv.bb.com.br' );
+//define( 'DB_HOST', 'silo8-master.mysql.bdh.desenv.bb.com.br' );
 define( 'DB_HOST', 'localhost' );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */

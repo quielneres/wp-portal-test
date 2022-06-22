@@ -20,69 +20,8 @@
 					</h2>
 				</div>
 
-				<div class="col col--md-9">
-					<div class="row">
-						<div class="col col--sm-6 col--xl-4">
-							<div class="tip tip--sm mb-0">
-								<div class="tip__media media media--sm bg-trans" style="margin-right: 0.2rem">
-									<div class="media__text tx-warning fs-lg"><?php echo wp_count_posts( 'contract' )->publish; ?></div>
-								</div>
-
-								<div class="tip__body">
-									<div class="tip__title">Contratos Ativos</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col col--sm-6 col--xl-4">
-							<div class="tip tip--sm mb-0">
-								<div class="tip__media media media--sm bg-trans" style="margin-right: -0.5rem;">
-									<div class="media__text tx-warning fs-lg"><?php echo wp_count_posts( 'company' )->publish; ?></div>
-								</div>
-
-								<div class="tip__body">
-									<div class="tip__title">Empresas Parceiras</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col col--sm-6 col--xl-4">
-							<div class="tip tip--sm mb-0">
-								<div class="tip__media media media--sm bg-trans" style="margin-right: 3.5rem;">
-									<div class="media__text tx-warning fs-lg">
-
-										<?php
-										$contracts = new WP_Query( array(
-											'post_type'   => 'contract',
-											'numberposts' => -1,
-										) );
-
-										if ( $contracts->have_posts() ) {
-											$employees = 0;
-
-											while ( $contracts->have_posts() ) {
-												$contracts->the_post();
-
-												$employees = $employees + get_post_meta( get_the_id(), 'qty_employees', true );
-											}
-
-											echo $employees;
-
-											wp_reset_postdata();
-										}
-										?>
-
-									</div>
-								</div>
-
-								<div class="tip__body">
-									<div class="tip__title">Colaboradores</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                <?php get_template_part('template-parts/content-footer-numbers', ''); ?>
+            </div>
 		</div>
 	</div>
 </footer>

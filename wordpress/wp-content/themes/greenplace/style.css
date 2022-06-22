@@ -10,11 +10,6 @@
     font-weight: 300;
   }
 
-  /*@font-face {*/
-  /*  font-family: BancoDoBrasil;*/
-  /*  src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTextos-Medium.ttf');*/
-  /*  font-weight: 300;*/
-  /*}*/
 
   @font-face {
     font-family: BancoDoBrasil;
@@ -247,7 +242,8 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-height: calc(100vh - 8rem);
+    margin-bottom: 0;
+    /*min-height: calc(100vh - 8rem);*/
     transition: all ease 1s;
 
   }
@@ -3776,3 +3772,16 @@
     font-weight: normal;
   }
 
+  .content-numbers-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cards-mumber-footer {
+    display: flex;
+  }
+
+  .cards-mumber-footer .media__text {
+    margin-right: 0.5rem;
+  }
