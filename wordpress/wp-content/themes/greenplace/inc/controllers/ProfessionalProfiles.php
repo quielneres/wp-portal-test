@@ -69,20 +69,19 @@ class ProfessionalProfiles
                     1 => 'Engenheiro Devops IA',
                     2 => 'Especialista em Machine Learning e Deep Learning',
                     3 => 'Curadores de Bots',
-                    4 => 'Curadores de Bots',
-                    5 => 'Especialista em NLP, análise de texto, e soluções de busca',
-                    6 => 'Especialistas em Tomada de Decisão: Agentes inteligentes e Sistema de busca',
-                    7 => 'Especialista em Representação e raciocínio do conhecimento (semântica/ontologia) e NLP',
-                    8 => 'AIOps',
-                    9 => 'Especialista em Percepção e ambientes inteligentes',
-                    10 => 'Sistemas inteligentes de automação e robótica',
-                    11 => 'Desenvolvedor IA Fullstack',
-                    12 => 'Gestor técnico de dados',
-                    13 => 'DBA de aplicação',
-                    14 => 'Arquiteto de Integração de dados',
-                    15 => 'Cientista de Dados',
-                    16 => 'Engenheiro de Dados',
-                    17 => 'Engenheiro de Big Data'
+                    4 => 'Especialista em NLP, análise de texto, e soluções de busca',
+                    5 => 'Especialistas em Tomada de Decisão: Agentes inteligentes e Sistema de busca',
+                    6 => 'Especialista em Representação e raciocínio do conhecimento (semântica/ontologia) e NLP',
+                    7 => 'AIOps',
+                    8 => 'Especialista em Percepção e ambientes inteligentes',
+                    9 => 'Sistemas inteligentes de automação e robótica',
+                    10 => 'Desenvolvedor IA Fullstack',
+                    11 => 'Gestor técnico de dados',
+                    12 => 'DBA de aplicação',
+                    13 => 'Arquiteto de Integração de dados',
+                    14 => 'Cientista de Dados',
+                    15 => 'Engenheiro de Dados',
+                    16 => 'Engenheiro de Big Data'
                 ];
                 break;
         }
