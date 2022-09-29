@@ -54,7 +54,7 @@ class Greenplace_Widget_Process extends WP_Widget {
 					<div class="col col--md-8 col--xl-7">
 						<?php if ( ! empty( $title ) ) :
 							echo $args['before_title']; ?>
-								<a href="<?php echo $link; ?>"><?php echo $title; ?></a>
+								<a href="<?php echo $link; ?>" class="disabled-link"><?php echo $title; ?></a>
 							<?php echo $args['after_title'];
 						endif ?>
 

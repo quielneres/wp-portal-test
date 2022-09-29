@@ -53,7 +53,8 @@ class ProfessionalProfiles
                 break;
             case 'atendimento_geral':
                 $profiles = [
-                    18 => 'Scrum Master'
+                    18 => 'Scrum Master',
+                    24 => 'Arquiteto de Soluções'
                 ];
 
                 break;

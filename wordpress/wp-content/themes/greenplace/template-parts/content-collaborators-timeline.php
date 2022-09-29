@@ -10,7 +10,7 @@
             <div class="col col--sm desc-time-line">
 
                 <h2 class="widget__title">
-                    <a href="#">Total de Colaboradores</a>
+                    <a href="#" class="disabled-link">Total de Colaboradores</a>
                 </h2>
                 <p>Cronologia com a quantidade anual de profissionais disponibilizados pelas empresas parceiras
                     para nos auxiliar no desenvolvimento de software ao longo dos últimos anos.</p>

@@ -26,7 +26,7 @@
     }
 
     .manager-team .widget__head .tip__body {
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
     }
 
     .manager-team .tip {
@@ -82,41 +82,15 @@
 
 
             $avatar_user_url = "https://humanograma.intranet.bb.com.br/avatar/" . get_post_field('key', $manager);
-
-//            if ($_SERVER['SERVER_NAME'] == 'localhost') {
-//                $avatar_user_url = get_template_directory_uri() . "/img/avatar-user.png";
-//            }
             ?>
 
             <div class="col col--xl-4 fx">
-                <h2 class="h3 ta-center"><?php the_field('name'); ?></h2>
                 <div class="widget__head bg-blue">
                     <div class="tip tip--sm">
-                        <a class="tip__media media media--sm mr-3 bd"
-                           href="https://humanograma.intranet.bb.com.br/<?php echo get_post_field('key', $manager); ?>"
-                           target="_blank">
-                            <img class="media__img" src="<?= $avatar_user_url; ?>" alt="Wladys Terraciano">
-                        </a>
 
                         <div class="tip__body">
-                            <a class="head head--sm mb-0"
-                               href="https://humanograma.intranet.bb.com.br/<?php echo get_post_field('key', $manager); ?>"
-                               target="_blank"><span
-                                        class="head__title"><?php echo get_post_field('name', $manager); ?></span><span
-                                        class="head__desc"><?php echo get_post_field('role_name', $manager); ?></span></a>
 
-                            <ul class="list list--inline tx-xs mb-0">
-                                <li class="list__item"><a class="list__link"
-                                                          href="tel:<?php echo get_post_field('phone', $manager); ?>"><i
-                                                class="i i--phone tx-muted"></i><strong><?php echo get_post_field('phone', $manager); ?></strong></a>
-                                </li>
-                                <li class="list__item">
-                                    <a class="list__link"
-                                       href="https://humanograma.intranet.bb.com.br/<?php echo get_post_field('key', $manager); ?>"
-                                       target="_blank">
-                                        <small class="i i--external tx-muted"></small><span><?php echo get_post_field('key', $manager); ?></span></a>
-                                </li>
-                            </ul>
+                            <span class="head__title"><?php the_field('name'); ?></span>
                         </div>
                     </div>
                 </div>

@@ -3785,3 +3785,7 @@
   .cards-mumber-footer .media__text {
     margin-right: 0.5rem;
   }
+
+  .disabled-link {
+    pointer-events: none;
+  }

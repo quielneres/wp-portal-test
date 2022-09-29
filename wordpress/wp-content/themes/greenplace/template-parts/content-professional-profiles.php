@@ -10,7 +10,7 @@
 			<div class="col col--sm">
 
 				<h2 class="widget__title">
-					<a href="">Perfis Profissionais</a>
+					<a href="#" class="disabled-link">Perfis Profissionais</a>
 				</h2>
 				<p class="text-profile">Conheça os perfis profissionais que podem ser disponibilizados para colaboração, definições, conhecimentos e habilidades esperadas.</p>
 				<p class="text-select-profile">Selecione ao lado o perfil desejado.</p>
