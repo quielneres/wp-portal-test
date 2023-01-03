@@ -1,0 +1,36 @@
+{
+  "name": "stt-greenplace",
+  "version": "1.0.39",
+  "description": "",
+  "license": "UNLICENSED",
+  "scripts": {
+    "webfont": "grunt webfont",
+    "lint": "grunt stylelint",
+    "dev": "grunt dev"
+  },
+  "devDependencies": {
+    "autoprefixer": "~9.8.5",
+    "grunt": "~1.2.1",
+    "grunt-contrib-clean": "~2.0.0",
+    "grunt-browser-sync": "~2.2.0",
+    "grunt-contrib-pug": "~2.0.0",
+    "grunt-contrib-watch": "~1.1.0",
+    "grunt-php": "~3.0.0",
+    "grunt-postcss": "~0.9.0",
+    "grunt-prettify": "~0.4.0",
+    "grunt-puglint": "~1.0.0",
+    "grunt-sass": "~3.1.0",
+    "grunt-stylelint": "~0.15.0",
+    "grunt-webfont": "~1.7.2",
+    "load-grunt-config": "~3.0.1",
+    "node-sass": "~4.14.1",
+    "postcss": "~7.0.32",
+    "pug-lint": "~2.6.0",
+    "stylelint": "~13.6.1",
+    "stylelint-config-sass-guidelines": "~7.0.0",
+    "stylelint-declaration-use-variable": "~1.7.2",
+    "stylelint-order": "~4.1.0",
+    "stylelint-scss": "~3.18.0",
+    "time-grunt": "~2.0.0"
+  }
+}

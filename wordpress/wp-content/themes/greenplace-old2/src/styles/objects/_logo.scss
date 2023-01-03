@@ -1,0 +1,14 @@
+.logo {
+  margin-bottom: 1rem;
+
+  &__img {
+    max-height: 1.5rem;
+    max-width: 9rem;
+    width: auto;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}

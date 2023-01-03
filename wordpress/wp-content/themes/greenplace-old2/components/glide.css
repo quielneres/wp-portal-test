@@ -1,0 +1,85 @@
+.glide {
+  background-color: #2c546e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; }
+  .glide__track {
+    display: inherit;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%; }
+  .glide__slides {
+    backface-visibility: hidden;
+    display: inherit;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    touch-action: pan-Y;
+    transform-style: preserve-3d;
+    white-space: nowrap;
+    width: 100%;
+    will-change: transform; }
+    .glide__slides--dragging {
+      user-select: none; }
+  .glide__slide {
+    display: inherit;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100%;
+    padding: 1rem 1rem 0;
+    position: relative;
+    user-select: none;
+    white-space: normal;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .glide__slide {
+        padding-left: 4rem;
+        padding-right: 4rem; } }
+    .glide__slide a {
+      user-select: none; }
+  .glide__img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1; }
+  .glide__arrows {
+    user-select: none; }
+  .glide__arrow {
+    font-size: 3rem;
+    height: 100%;
+    position: absolute;
+    top: 0; }
+    .glide__arrow--right {
+      right: 0; }
+  .glide__bullets {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: .75rem;
+    position: absolute;
+    user-select: none;
+    width: 100%; }
+  .glide__bullet {
+    background-color: #fff;
+    border-radius: 50%;
+    height: .75rem;
+    margin-top: .25rem;
+    width: .75rem; }
+    .glide__bullet:not(.glide__bullet--active) {
+      opacity: .5; }
+    .glide__bullet:not(:first-child) {
+      margin-left: .25rem; }
+    .glide__bullet:not(:last-child) {
+      margin-right: .25rem; }
+
+/*# sourceMappingURL=glide.css.map */

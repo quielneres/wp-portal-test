@@ -1,0 +1,6 @@
+* text=auto
+
+*.woff binary
+
+package-lock.json -diff
+package-lock.json linguist-generated=true

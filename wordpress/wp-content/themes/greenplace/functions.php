@@ -291,21 +291,21 @@ add_filter( 'wpcf7_form_tag', 'dynamic_select_form_contact', 10, 2);
 
 function get_question_category(): array {
 
-    $raw_fields = acf_get_raw_fields( 456 );
+	$raw_fields = acf_get_raw_fields( 456 );
 
-    $category_field = array_filter($raw_fields, function($filed) {
-        if ($filed['name'] == 'category') {
-            return $filed;
-        }
-    });
+	$category_field = array_filter($raw_fields, function($filed) {
+		if ($filed['name'] == 'category') {
+			return $filed;
+		}
+	});
 
-    $arr_category = [];
+	$arr_category = [];
 
-    foreach ($category_field as $field) {
-        $arr_category[] = $field['choices'];
-    }
+	foreach ($category_field as $field) {
+		$arr_category[] = $field['choices'];
+	}
 
-    return $arr_category;
+	return $arr_category[0];
 }
 
 /**

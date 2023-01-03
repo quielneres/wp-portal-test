@@ -1,0 +1,12 @@
+.fx {
+  display: flex;
+  flex-direction: column;
+
+  &--row {
+    flex-direction: row;
+  }
+}
+
+.fx-grow {
+  flex-grow: 1;
+}

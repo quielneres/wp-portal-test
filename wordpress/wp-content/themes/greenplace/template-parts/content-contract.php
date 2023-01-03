@@ -85,7 +85,7 @@ $contracts = new WP_Query( array(
 
 									<?php if (get_field('qty_months')): ?>
 										<dt>Prazo de vigência</dt>
-										<dd><?php the_field( 'qty_months' ); ?> meses*</dd>
+										<dd><?php the_field( 'qty_months' ); ?> meses</dd>
 									<?php endif; ?>
 
 

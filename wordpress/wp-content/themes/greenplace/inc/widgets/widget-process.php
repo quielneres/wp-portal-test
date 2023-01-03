@@ -34,11 +34,11 @@ class Greenplace_Widget_Process extends WP_Widget {
 	/**
 	 * Outputs the content for the current Process widget instance.
 	 *
-	 * @global WP_Post $post Global post object.
-	 *
 	 * @param array $args     Display arguments including 'before_title', 'after_title',
 	 *                        'before_widget', and 'after_widget'.
 	 * @param array $instance Settings for the current Process widget instance.
+	 *@global WP_Post $post Global post object.
+	 *
 	 */
 	public function widget( $args, $instance ) {
 		$title = ! empty( $instance['title'] ) ? $instance['title'] : '';
@@ -47,19 +47,14 @@ class Greenplace_Widget_Process extends WP_Widget {
 		$image = ! empty( $instance['image'] ) ? $instance['image'] : '';
 
 		echo $args['before_widget']; ?>
-
+            <div>
 			<div class="widget__body">
 				<div class="row middle-xs">
-					<div class="col col--md-4 col--xl-5">
-						<figure class="widget__figure">
-							<img class="widget__img" src="<?php echo $image; ?>" alt="<?php echo $title; ?>" style="max-height: 12rem">
-						</figure>
-					</div>
 
 					<div class="col col--md-8 col--xl-7">
 						<?php if ( ! empty( $title ) ) :
 							echo $args['before_title']; ?>
-								<a href="<?php echo $link; ?>"><?php echo $title; ?></a>
+								<a href="<?php echo $link; ?>" class="disabled-link"><?php echo $title; ?></a>
 							<?php echo $args['after_title'];
 						endif ?>
 
@@ -71,6 +66,12 @@ class Greenplace_Widget_Process extends WP_Widget {
 					</div>
 				</div>
 			</div>
+
+            <div class="col col--md-4 col--xl-5 figure-learn-process">
+                <figure class="widget__figure">
+                    <img class="widget__img" src="<?php echo $image; ?>" alt="<?php echo $title; ?>" style="max-height: 16rem">
+                </figure>
+            </div>
 
 		<?php echo $args['after_widget'];
 	}

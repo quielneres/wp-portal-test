@@ -10,11 +10,6 @@
   font-weight: 300;
 }
 
-/*@font-face {*/
-/*  font-family: BancoDoBrasil;*/
-/*  src: url('/wp-content/themes/greenplace/fonts/BancoDoBrasil/BancoDoBrasilTextos-Medium.ttf');*/
-/*  font-weight: 300;*/
-/*}*/
 
 @font-face {
   font-family: BancoDoBrasil;
@@ -247,7 +242,8 @@ h6,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: calc(100vh - 8rem);
+  margin-bottom: 0;
+  /*min-height: calc(100vh - 8rem);*/
   transition: all ease 1s;
 
 }
@@ -3718,8 +3714,78 @@ select.form-select,
 }
 
 .link--panels, .links__bulletins{
-  color: #052B4C;
+  color: #455AFF;
 }
 
+.prifiles-collaborators .comb-select {
+  /*background-color: red;*/
+  max-height: 12rem;
+  min-height: 7rem;
+  padding: 0 0 0 0;
+  margin: 4rem 0 0.85rem 0;
+}
 
+.prifiles-collaborators .desc-time-line {
+  padding-bottom: 2.88rem
+}
 
+.prifiles-collaborators .text-profile{
+  margin-top: 0.9rem;
+}
+.prifiles-collaborators .text-select-profile{
+  margin-top: 2rem;
+}
+
+.figure-learn-process {
+  position: initial;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 576px) {
+  .figure-learn-process {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+  }
+}
+
+.figure-learn-process .widget__figure {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.desc-welcome-collaborator {
+  font-size: 0.95rem;
+}
+
+.list--dot > .list__item::before {
+  color: #F97A70;
+  margin-top: -0.19rem;
+  font-size: 2.5rem;
+}
+
+.list__process .list__link{
+  color: #455AFF;
+  font-weight: normal;
+}
+
+.content-numbers-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-mumber-footer {
+  display: flex;
+}
+
+.cards-mumber-footer .media__text {
+  margin-right: 0.5rem;
+}
+
+.disabled-link {
+  pointer-events: none;
+}

@@ -28,11 +28,11 @@
 							<li class="breadcrumb__item">
 								<span class="breadcrumb__text">
 									<?php
-										if ( get_field( 'breadcrumb' ) ):
-											the_field( 'breadcrumb' );
-										else :
-											the_title();
-										endif;
+									if ( get_field( 'breadcrumb' ) ):
+										the_field( 'breadcrumb' );
+									else :
+										the_title();
+									endif;
 									?>
 								</span>
 							</li>
@@ -76,5 +76,5 @@
 		</div>
 	</div>
 
-	<?php get_template_part( 'template-parts/content-call-contact', get_post_type() ); ?>
+	<!--	--><?php //get_template_part( 'template-parts/content-call-contact', get_post_type() ); ?>
 </main>

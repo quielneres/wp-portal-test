@@ -1,92 +1,92 @@
 .tabs__guide {
-    width: 100%;
+  width: 100%;
 }
 
 .tabs__guide ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    /*border-bottom: 1px solid #eee;*/
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  /*border-bottom: 1px solid #eee;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .tabs__guide ul li {
-    width: 50%;
-    justify-content: center;
-    margin-top: -0.1rem;
+  width: 50%;
+  justify-content: center;
+  margin-top: -0.1rem;
 
 
 }
 
 .tabs__guide ul li a {
-    display: block;
-    outline: none;
-    /*padding: 0.5rem;*/
-    padding: 0.5rem 2rem;
-    text-decoration: none;
-    /*border: 1px solid #eee;*/
-    border-bottom: 0;
-    /*background-color: #efefef;*/
-    background-color: rgba(238, 238, 238, 0.9);
-    color: #455AFF;
-    transform: translateY(1px);
-    -webkit-transform: translateY(1px);
-    -moz-transform: translateY(1px);
+  display: block;
+  outline: none;
+  /*padding: 0.5rem;*/
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  /*border: 1px solid #eee;*/
+  border-bottom: 0;
+  /*background-color: #efefef;*/
+  background-color: rgba(238, 238, 238, 0.9);
+  color: #455AFF;
+  transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
 
 }
 
 .tabs__guide ul li a.active {
-    background-color: #FFF;
-    color: #0c0c0c;
+  background-color: #FFF;
+  color: #0c0c0c;
 }
 
 .tabs__guide ul li.active {
-    background-color: red;
+  background-color: red;
 }
 
 .tabs__guide > div > div {
-    display: none;
-    /*border: 1px solid #eee;*/
-    border-top: 0;
-    padding: 1.5rem 2rem 0.4rem;
+  display: none;
+  /*border: 1px solid #eee;*/
+  border-top: 0;
+  padding: 1.5rem 2rem 0.7rem;
 }
 
 .tabs__guide > div > div.active {
-    display: block;
+  display: block;
 }
 
 .tabs__guide .fw-450 {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .tabs__guide .fw-450 i {
-    font-weight: bold;
-    margin-right: 0.5rem;
-    color: #F97A70;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #F97A70;
 }
 
 .tabs__guide .previous-versions {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tabs__guide .previous-versions .fw-450 {
-    font-weight: normal;
-    font-size: 0.8rem;
+  font-weight: normal;
+  font-size: 0.8rem;
 }
 
 
 .tabs__guide .row a {
-    color: #455AFF;
+  color: #455AFF;
 }
 
 .tabs__guide .row h5 {
-    margin-bottom: 0.7rem;
-    font-weight: 300;
+  margin-bottom: 0.7rem;
+  font-weight: 300;
 }
 
 .tabs__guide .mb-3, .my-3 {
-    margin-bottom: 1.9rem !important;
+  margin-bottom: 1.9rem !important;
 }

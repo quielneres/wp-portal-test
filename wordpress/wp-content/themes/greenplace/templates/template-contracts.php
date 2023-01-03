@@ -74,6 +74,7 @@ if ($system) {
 		'meta_value' => $system_id,
 		'numberposts' => -1,
 		'meta_query'  => $meta_query,
+		'posts_per_page' => -1
 	) );
 
 
@@ -95,6 +96,7 @@ if ($system) {
 		'post__in'    => $post__in,
 		'numberposts' => -1,
 		'meta_query'  => $meta_query,
+		'posts_per_page' => -1
 	) );
 
 
