@@ -7,14 +7,25 @@
  * @package Greenplace
  */
 
+
+/**
+ * Load Auth
+ */
+require get_template_directory() . '/auth/BB_Auth.php';
+
+
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
+
+$auth = new BB_Auth();
+$auth->checkLogin();
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.5' );
 }
+
 
 if ( ! function_exists( 'greenplace_setup' ) ) :
 	/**
@@ -308,6 +319,12 @@ function get_question_category(): array {
 	return $arr_category[0];
 }
 
+function get_usuario_intranet(): array {
+    $usuaria_intarnet = new UsuarioIntranet();
+
+    return $usuaria_intarnet->obterUsuario();
+}
+
 /**
  * Implement the Custom Header feature.
  */
@@ -378,4 +395,5 @@ require get_template_directory() . '/inc/controllers/ProfessionalProfiles.php';
 require get_template_directory() . '/inc/controllers/Questions.php';
 require get_template_directory() . '/inc/controllers/Process.php';
 require get_template_directory() . '/inc/controllers/Guide.php';
+require get_template_directory() . '/inc/controllers/UsuarioIntranet.php';
 

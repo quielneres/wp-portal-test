@@ -26,10 +26,9 @@
 					<div class="col col--xl hidden-xs hidden-sm hidden-md hidden-lg">
 						<?php bem_menu('top', 'list', 'list--inline mb-0'); ?>
 					</div>
-
-					<!-- <div class="col col--xl-3 end-xl">
-						<div class="lh-lg"><span>Olá <strong>Bruno Wego</strong>, seja bem vindo.</span><i class="i i--user tx-muted fs-md"></i><a href="/">Sair</a></div>
-					</div> -->
+                    <div class="col col--xl-3 end-xl">
+                     <?php get_template_part( 'template-parts/content-usuario-intranet', 'none' ); ?>
+					</div>
 				</div>
 			</div>
 		</div>
