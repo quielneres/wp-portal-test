@@ -50,11 +50,11 @@ define( 'DB_CHARSET', 'utf8mb4' );
 define( 'DB_COLLATE', '' );
 
 //
-//define('WP_HOME','http://localhost:8000/');
-//define('WP_SITEURL','http://localhost:8000/');
+define('WP_HOME','http://localhost:8000/');
+define('WP_SITEURL','http://localhost:8000/');
 
-define('WP_HOME','http://portal.stt.desenv.bb.com.br/');
-define('WP_SITEURL','http://portal.stt.desenv.bb.com.br/');
+//define('WP_HOME','http://portal.stt.desenv.bb.com.br/');
+//define('WP_SITEURL','http://portal.stt.desenv.bb.com.br/');
 
 /**#@+
  * Chaves únicas de autenticação e salts.

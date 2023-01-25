@@ -11,14 +11,14 @@
 /**
  * Load Auth
  */
-require get_template_directory() . '/auth/BB_Auth.php';
+require get_template_directory() . '/inc/auth-intranet/BB_AuthIntranet.php';
 
 
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
 
-$auth = new BB_Auth();
+$auth = new BB_AuthIntranet();
 $auth->checkLogin();
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -213,7 +213,10 @@ function greenplace_scripts() {
 
 	wp_enqueue_script( 'greenplace-professional-profiles', get_template_directory_uri() . '/js/professional-profiles.js', array(), '20151215', true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+    wp_enqueue_script( 'greenplace-logout-intranet', get_template_directory_uri() . '/js/logout-intranet.js', array(), '20151215', true );
+
+
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
@@ -244,6 +247,17 @@ function professional_profiles(){
 
 add_action( 'wp_ajax_get_professional_profiles', 'professional_profiles' );
 add_action( 'wp_ajax_nopriv_get_professional_profiles', 'professional_profiles' );
+
+function logout_intranet() {
+
+    $auth = new BB_AuthIntranet();
+    $resposta = $auth->logoutIntranet();
+    echo json_encode($resposta);
+    die();
+}
+
+add_action( 'wp_ajax_get_logout_intranet', 'logout_intranet' );
+add_action( 'wp_ajax_nopriv_get_logout_intranet', 'logout_intranet' );
 
 
 function cyb_document_title_separator( $sep ) {

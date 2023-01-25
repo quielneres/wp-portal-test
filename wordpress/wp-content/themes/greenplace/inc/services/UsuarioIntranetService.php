@@ -1,12 +1,16 @@
 <?php
+require_once get_template_directory() . '/inc/services/SessionIntranetService.php';
 
 class UsuarioIntranetService
 {
-    public function getAtributos()
+    public function getAtributos($BB_SSOToke ,$BB_SSOACR, $SSO_URL)
     {
+        $sso_token_key =  array_keys($BB_SSOToke)[0];
+        $prefixo       = explode('.', $BB_SSOACR)[1];
+
         $arr_cookies = [
-            'ssoacr'     => BB_SSOACR,
-            'BBSSOTokenDS' => BB_SSOToke
+            'ssoacr'     => $SSO_URL,
+            $sso_token_key => $BB_SSOToke[$sso_token_key]
         ];
 
         $cookies = [];
@@ -15,7 +19,7 @@ class UsuarioIntranetService
             $cookie->name = $key;
             $cookie->value =  $value;
             $cookie->path = '/';
-            $cookie->domain = '.desenv.bb.com.br';
+            $cookie->domain = ".{$prefixo}.bb.com.br";
             $cookies[] = $cookie;
         }
 
@@ -24,9 +28,15 @@ class UsuarioIntranetService
             'sslverify' => false,
         );
 
-        $users = wp_remote_post(SSO_URL, $args);
+        $users = wp_remote_post($SSO_URL, $args);
 
         $arr_data = [];
+
+        if (isset($users->errors)) {
+            return [
+                'code' => 500
+            ];
+        }
 
         if ($users['response']['code'] === 200) {
             $arr_data = json_decode($users['body']);
