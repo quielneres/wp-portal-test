@@ -3,7 +3,8 @@
 class SessionIntranetService
 {
     protected $ssoacr;
-    protected $BBSSOToken = [];
+    protected $BBSSOToken;
+    protected $prefixBBSSOToken;
     protected $domimioSsoacr;
     protected $prefixAmbiente;
     protected $urlLoginIntranet;
@@ -15,9 +16,8 @@ class SessionIntranetService
         session_start();
         $this->prefixAmbiente = explode('.', $_SERVER['HTTP_HOST'])[2];
 
-        if (empty($this->prefixAmbiente)) {
-            $this->setCookieAmbienteLocal();
-        }
+        ##utiliza-se para definir os cookeis no ambiente local
+        $this->setCookieAmbienteLocal();
 
         $this->urlLoginIntranet
             = "https://login.{$this->prefixAmbiente}.bb.com.br/sso/XUI/#login/&goto=https://portal.stt.{$this->prefixAmbiente}.bb.com.br/";
@@ -26,26 +26,23 @@ class SessionIntranetService
         $this->domimioSsoacr
             = "sso.{$this->prefixAmbiente}.bb.com.br";
 
-        if (empty($_COOKIE['ssoacr'])) {
+        switch ($this->prefixAmbiente){
+            case 'desenv':
+                $this->prefixBBSSOToken = 'BBSSOTokenDS';
+                break;
+            case 'hm':
+                $this->prefixBBSSOToken = 'BBSSOTokenHM';
+                break;
+            case 'intranet':
+                $this->prefixBBSSOToken = 'BBSSOToken';
+                break;
+        }
 
-            $this->ssoacr = $_COOKIE['ssoacr'];
-            switch ($this->prefixAmbiente){
-                case 'desenv':
-                    $this->BBSSOToken = [
-                        'BBSSOTokenDS' => $_COOKIE['BBSSOTokenDS']
-                    ];
-                    break;
-                case 'hml':
-                    $this->BBSSOToken = [
-                        'BBSSOTokenHM' => $_COOKIE['BBSSOTokenHM']
-                    ];
-                    break;
-                case 'intranet':
-                    $this->BBSSOToken = [
-                        'BBSSOToken' => $_COOKIE['BBSSOToken']
-                    ];
-                    break;
-            }
+        if (!empty($_COOKIE['ssoacr']) &&
+            !empty($_COOKIE[$this->prefixBBSSOToken])
+        ) {
+            $this->ssoacr     = $_COOKIE['ssoacr'];
+            $this->BBSSOToken = $_COOKIE[$this->prefixBBSSOToken];
         }
     }
 
@@ -54,7 +51,7 @@ class SessionIntranetService
         return $this->ssoacr;
     }
 
-    public function getBBSSOToken(): array
+    public function getBBSSOToken()
     {
         return $this->BBSSOToken;
     }
@@ -67,6 +64,10 @@ class SessionIntranetService
     public function getUrlSsoIntranet():string
     {
         return $this->urlSSOIntranet;
+    }
+    public function getPrefixBBSSOToken()
+    {
+        return $this->prefixBBSSOToken;
     }
 
     public function getVariaveis(): array
@@ -92,6 +93,6 @@ class SessionIntranetService
     {
         $this->prefixAmbiente = 'desenv';
         setcookie('ssoacr', 'sso.desenv.bb.com.br');
-        setcookie('BBSSOTokenDS', '3Eim_Jd72qJcLXVsR8LEFHcSGzo.*AAJTSQACMDIAAlNLABxlZFB2ZjBjVjlTZVhPSFVYNjVNYW4wV1FKTGs9AAR0eXBlAANDVFMAAlMxAAIwNg..*');
+        setcookie('BBSSOTokenDS', '3WaoHVOuQMQdqqOVQsI0KfSXLX8.*AAJTSQACMDIAAlNLABxjQkcydTR3TjA0Y1JvS2h5U3BtR1gveGNUYXM9AAR0eXBlAANDVFMAAlMxAAIwNg..*');
     }
 }

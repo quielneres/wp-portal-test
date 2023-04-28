@@ -6,22 +6,21 @@ class ProfessionalProfiles
 	public function list_profiles($category)
 	{
 		switch ($category) {
+			case 'atendimento_geral':
+				$profiles = [
+					25 => 'Arquiteto Especialista/Principal Engineer/Staff Engineer',
+				];
+				break;
 			case 'alta_pataforma':
 				$profiles = [
-					1 => 'Analista de sistemas Mainframe',
-					2 => 'Programador COBOL',
-					3 => 'Programador NATURAL',
-					4 => 'Programador COBOL/NATURAL',
+					26 => 'Analista/Programador Alta Plataforma',
 				];
 				break;
 			case 'baixa_plataforma_mobile':
 
 				$profiles = [
-					5 => 'Analista de sistemas (Baixa plataforma e Mobile)',
-					6 => 'Programador Baixa Plataforma',
-					7 => 'Programador Mobile',
-					8 => 'Programador Baixa Plataforma Fullstack',
-					9 => 'Analista de Integração usando Tibco BW',
+					27 => 'Analista/Programador Baixa Plataforma',
+					9  => 'Analista de Integração usando Tibco BW',
 				];
 
 				break;
@@ -45,24 +44,12 @@ class ProfessionalProfiles
 				break;
 			case 'testes':
 				$profiles = [
-					14 => 'Analista de Testes / QA Mobile',
-					15 => 'Analista de Testes / QA WEB',
-					16 => 'Analista de Testes / QA Testes não funcionais',
-					17 => 'Testes de integração com foco em Microsserviços'
+					28 => 'Analista de Testes / QA Mobile, Web ou Testes não funcionais'
 				];
-				break;
-			case 'atendimento_geral':
-				$profiles = [
-					18 => 'Scrum Master',
-					24 => 'Arquiteto de Soluções'
-				];
-
 				break;
 			case 'ux':
 				$profiles = [
-					19 => 'Analista de UX',
-					20 => 'UX Designer',
-					21 => 'Analista de UI'
+					29 => 'UX Designer, Analista de UX ou UI'
 				];
 				break;
 			case 'gestao_dados':

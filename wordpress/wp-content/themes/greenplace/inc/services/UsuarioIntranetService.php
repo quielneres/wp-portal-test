@@ -3,14 +3,13 @@ require_once get_template_directory() . '/inc/services/SessionIntranetService.ph
 
 class UsuarioIntranetService
 {
-    public function getAtributos($BB_SSOToke ,$BB_SSOACR, $SSO_URL)
+    public function getAtributos($BB_SSOToke ,$BB_SSOACR, $SSO_URL, $prefixBBSSOToken)
     {
-        $sso_token_key =  array_keys($BB_SSOToke)[0];
         $prefixo       = explode('.', $BB_SSOACR)[1];
 
         $arr_cookies = [
-            'ssoacr'     => $SSO_URL,
-            $sso_token_key => $BB_SSOToke[$sso_token_key]
+            'ssoacr'          => $SSO_URL,
+            $prefixBBSSOToken => $BB_SSOToke
         ];
 
         $cookies = [];

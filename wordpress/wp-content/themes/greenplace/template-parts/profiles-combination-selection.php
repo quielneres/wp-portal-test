@@ -2,13 +2,13 @@
 	<div class="form-select">
 		<select name="system_id" id="combo_categories">
 			<option value="" hidden="true">Selecione a categoria</option>
+			<option value="atendimento_geral">Atendimento Geral</option>
 			<option value="alta_pataforma">Alta Plataforma</option>
 			<option value="baixa_plataforma_mobile">Baixa Plataforma e Mobile</option>
 			<option value="cloud_computing">Cloud Computing</option>
 			<option value="blockchain">Blockchain</option>
 			<option value="itsm_csm">ITSM/CSM</option>
 			<option value="testes">Testes</option>
-			<option value="atendimento_geral">Atendimento Geral</option>
 			<option value="ux">UX</option>
 			<option value="gestao_dados">IA, Analytics e Gestão de Dados</option>
 		</select>
