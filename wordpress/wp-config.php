@@ -49,7 +49,7 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
 define( 'DB_COLLATE', '' );
 
-//
+
 define('WP_HOME','http://localhost:8000/');
 define('WP_SITEURL','http://localhost:8000/');
 
