@@ -4,9 +4,13 @@
 	<div class="tabs__guide">
 
 		<ul>
-			<li><a href="#">Guia USTIBB <br> Acionamento</a></li>
+			<li>
+				<h2 class="widget__title">
+					<a href="#">Guia USTIBB</a>
+				</h2>
+			</li>
 
-			<li><a href="#">Guia USTIBB <br> Fábrica</a></li>
+			<!--			<li><a href="#">Guia USTIBB <br> Fábrica</a></li>-->
 		</ul>
 
 		<div>

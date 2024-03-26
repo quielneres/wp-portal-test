@@ -54,13 +54,17 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+  text-size-adjust: 100%;
+  position: relative;
+  min-height: 100%;
+}
 
 body {
   /*background-color: #efefef;*/
   background-color: rgba(238, 238, 238, 0.9);
 
-  margin: 0; }
+  margin: 0 0 2.5rem 0;
+}
 
 a,
 button {
@@ -1153,6 +1157,9 @@ h6,
 .i--question::before {
   content: '\f113'; }
 
+.i--employee::before {
+  content: '\f113'; }
+
 .i--quote-left::before {
   content: '\f10d'; }
 
@@ -1998,6 +2005,10 @@ select.form-select,
 
 .question {
   padding-left: 4.5rem; }
+
+.employee {
+  padding-left: 4.5rem;
+}
 .question__id {
   border-radius: 1rem;
   font-size: .87rem;
@@ -3671,7 +3682,6 @@ select.form-select,
   margin-bottom: 25px;
 
 }
-
 
 .question__icon__index:before {
   content: '\f054';

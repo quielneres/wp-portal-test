@@ -1,0 +1,97 @@
+.footer-position-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.footer-bg-dark {
+  background-color: #052b33;
+  color: #fff;
+}
+
+.footer-container {
+  border-bottom: 1px solid #cccccc91;
+}
+
+.footer-grid-main {
+  padding-bottom: 60px;
+  display: table;
+  margin: 0 auto;
+}
+
+.footer-card-image {
+  width: 6rem ;
+  height: 6rem ;
+}
+
+.footer-card-image-text {
+  width: 10rem;
+  margin-right: 15px;
+}
+
+.footer-card-image-logo {
+  margin-bottom: 0;
+}
+
+.footer-nav-acessibility {
+  display: table-row;
+}
+
+.footer-nav-link-col {
+  display: table-cell;
+  padding: 0 10px;
+}
+
+.footer-card-logo {
+  margin-top: 0px;
+}
+
+.footer-card-image-primary {
+  text-align: start;
+}
+
+.footer-secundary-border {
+  border-top: 1px solid #cccccc91;
+  background-color: #052b33;
+  color: #fff;
+}
+
+.footer-card-text-description {
+  font-size: 13px;
+}
+
+.footer-card-primary-text {
+  font-size: 15px;
+  line-height: 1.3rem;
+}
+
+.footer-card-title {
+  font-size: 16px;
+  margin: 40px 0 15px 0;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.footer-card-figure {
+  margin-bottom: 0px;
+}
+
+.footer-card-text-figure {
+  text-align: start;
+  font-size: 14px;
+}
+
+.footer-card-text {
+  color: #DDD;
+  font-size: 14px;
+}
+
+.footer-card-fale-conosco-description {
+  line-height: 2rem;
+}
+
+.footer-text-copyright {
+  text-align: center;
+  font-size: 12px;
+}

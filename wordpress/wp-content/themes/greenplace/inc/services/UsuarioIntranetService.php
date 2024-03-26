@@ -27,6 +27,9 @@ class UsuarioIntranetService
             'sslverify' => false,
         );
 
+//		echo "<script>console.log('URL login: " . $SSO_URL . "' );</script>";
+//		echo "<script>console.log('Args Login: " . $args . "' );</script>";
+
         $users = wp_remote_post($SSO_URL, $args);
 
         $arr_data = [];

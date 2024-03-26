@@ -23,19 +23,19 @@
 .tabs__guide ul li a {
   display: block;
   outline: none;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
   /*padding: 0.5rem;*/
-  padding: 0.5rem 2rem;
+  /*padding: 0.5rem 2rem;*/
   text-decoration: none;
   /*border: 1px solid #eee;*/
-  border-bottom: 0;
   /*background-color: #efefef;*/
-  background-color: rgba(238, 238, 238, 0.9);
-  color: #455AFF;
   transform: translateY(1px);
   -webkit-transform: translateY(1px);
   -moz-transform: translateY(1px);
-
 }
+
 
 .tabs__guide ul li a.active {
   background-color: #FFF;
@@ -50,7 +50,7 @@
   display: none;
   /*border: 1px solid #eee;*/
   border-top: 0;
-  padding: 1.5rem 2rem 0.7rem;
+  padding: 0 1.7rem 0.7rem;
 }
 
 .tabs__guide > div > div.active {

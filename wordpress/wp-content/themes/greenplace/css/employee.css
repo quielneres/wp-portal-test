@@ -1,0 +1,75 @@
+.employee {
+  padding-left: 4.5rem;
+}
+.list_employee {
+  padding-left: 4.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.employee__id {
+  border-radius: 1rem;
+  font-size: .87rem;
+  font-weight: bold;
+  line-height: 2rem;
+  margin-left: -3rem;
+  position: absolute;
+  text-align: center;
+  width: 2rem; }
+.employee__title {
+  font-size: 1rem; }
+.employee__answer {
+  max-height: 100rem;
+  overflow: hidden;
+  -webkit-transition: opacity .6s, max-height .3s;
+  transition: opacity .6s, max-height .3s; }
+.employee__answer:not(.is-show) {
+  max-height: 0;
+  opacity: 0; }
+.employee__answer__category {
+  max-height: 100rem;
+  overflow: hidden;
+  -webkit-transition: opacity .6s, max-height .3s;
+  transition: opacity .6s, max-height .3s; }
+.employee__answer__category:not(.is-show) {
+  max-height: 0;
+  opacity: 0; }
+
+.employee__icon__list:before {
+  content: '\f105';
+  font-family: "Font Awesome 5 Free";
+  color: #2c546e;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  width: 32px;
+}
+
+.employee__icon__index:before {
+  content: '\f054';
+  font-family: "Font Awesome 5 Free";
+  color: #2c546e;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  width: 32px;
+}
+
+.employee__icon__index__active:after {
+  content: '\f078';
+  font-family: "Font Awesome 5 Free";
+  color: #2c546e;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  width: 32px;
+}
+
+.employee__icon__list__active:after {
+  content: '\f107';
+  font-family: "Font Awesome 5 Free";
+  color: #2c546e;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  width: 32px;
+}

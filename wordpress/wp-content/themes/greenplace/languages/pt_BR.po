@@ -32,6 +32,14 @@ msgstr ""
 msgid "Bulletins"
 msgstr "Comunicados"
 
+#: post-types/employee.php:9 post-types/employee.php:33
+msgid "Employees"
+msgstr "Funcionários"
+
+#: post-types/portal-map.php:9 post-types/portal-map.php:33
+msgid "Map Portal"
+msgstr "Mapa do Portal"
+
 #: post-types/bulletin.php:10
 msgid "Bulletin"
 msgstr ""

@@ -18,7 +18,7 @@ get_header();
 			</div>
 
 			<div class="col col--lg-4">
-				<?php get_template_part('template-parts/home-contract-search', ''); ?>
+				<?php dynamic_sidebar('home-topo-2'); ?>
 			</div>
 
 		</div>
@@ -37,19 +37,25 @@ get_header();
 			<?php endif; ?>
 
 			<div class="col col--xl-4">
-				<?php get_template_part('template-parts/home-guides', ''); ?>
+				<?php dynamic_sidebar( 'home-mid-2' ); ?>
 			</div>
 		</div>
 
 		<div class="row row--padded prifiles-collaborators">
 			<div class="col col--md-6">
-				<?php get_template_part('template-parts/content-professional-profiles', ''); ?>
+				<?php dynamic_sidebar('home-bot-1'); ?>
 			</div>
 
 			<div class="col col--md-6">
-				<?php get_template_part('template-parts/content-collaborators-timeline', ''); ?>
+				<?php dynamic_sidebar('home-bot-2')?>
 			</div>
 		</div>
+
+<!--		<div class="row row--padded prifiles-collaborators mb-3">-->
+<!--			<div class="col col--md-12">-->
+<!--				--><?php //get_template_part('template-parts/content-engage', ''); ?>
+<!--			</div>-->
+<!--		</div>-->
 	</div>
 </main>
 

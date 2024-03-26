@@ -1,12 +1,11 @@
 <?php
 
-class ProfessionalProfiles
+class OutsourcingJourney
 {
-
-    public function get_professional_profiles(): array
+    public function get_outsourcing_journey(): array
     {
-        $professional_profiles = get_posts(array(
-			'post_type'      => 'professional_profile',
+        $outsourcing_journey = get_posts(array(
+			'post_type'      => 'outsourcing_journey',
 			'posts_per_page' => -1,
 			'meta_key'       => 'order',
 			'orderby'        => 'meta_value_num',
@@ -15,7 +14,7 @@ class ProfessionalProfiles
 
         $result = array();
 
-        foreach ($professional_profiles as $post) {
+        foreach ($outsourcing_journey as $post) {
             $result[] = [
                 'title'  => $post->post_title,
                 'link'   => $post->link,
@@ -24,5 +23,5 @@ class ProfessionalProfiles
 
         return $result;
     }
-
 }
+

@@ -15,6 +15,12 @@ get_header();
 	<div class="container pt-4 pb-2 fx-grow push-up">
 		<div class="row">
 			<div class="col col--md-6 push-down">
+
+				<div class="mb-4">
+					<h3 class="h5 mb-0">Teams</h3>
+					<p><a href="<?php the_field( 'teams_url' ); ?>" target="_blank"><span><?php the_field( 'teams' ); ?></span></a></p>
+				</div>
+
 				<div class="mb-4">
 					<h3 class="h5 mb-0">E-mail</h3>
 					<p><a href="mailto:<?php the_field( 'email' ); ?>"><i class="i i--mail tx-muted"></i><span><?php the_field( 'email' ); ?></span></a></p>

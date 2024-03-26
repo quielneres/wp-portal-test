@@ -126,19 +126,11 @@ if ($system) {
 				<div class="row">
 					<div class="col col--md-7">
 						<div class="form-field form-field--horizontal">
-							<div class="form-label">Aplicar filtros:</div>
+							<div class="form-label">Aplicar filtro:</div>
+
+                            <input type="hidden" value="company" name="type">
 
 							<div class="form-options row">
-
-								<label class="form-label col col--xl-4" for="system">
-									<input class="form-radio" type="radio" id="system" value="system" name="type"<?php if ( get_query_var( 'type' ) == 'system' || get_query_var( 'type' ) == '' ): ?> checked="true"<?php endif; ?>>por Tipo de Contrato
-								</label>
-
-
-
-								<label class="form-label col col--xl-4" for="company">
-									<input class="form-radio" type="radio" id="company" value="company" name="type"<?php if ( get_query_var( 'type' ) == 'company' ): ?> checked="true"<?php endif; ?>>por Empresa
-								</label>
 							</div>
 						</div>
 					</div>
@@ -146,61 +138,30 @@ if ($system) {
 					<div class="col col--md-4">
 						<div id="select-system" class="form-field is-hidden">
 							<div class="form-select">
-								<select name="system_id">
-									<option value="" hidden="true">Selecione uma opção</option>
-									<option value="acionamento" >Acionamento</option>
-									<option value="fsw">Fábrica de Software</option>
-								</select>
-							</div>
-						</div>
-
-						<div id="select-contract" class="form-field is-hidden">
-							<div class="form-select">
-								<select name="contract_id">
-									<option value="" hidden="true">Selecione uma opção</option>
-
-									<?php
-									if ( $contracts ):
-
-										foreach($contracts as $post):
-
-											setup_postdata( $post )
-											?>
-											<option value="<?php the_id(); ?>"<?php if ( get_query_var( 'contract_id' ) == $post->ID ): ?> selected="true"<?php endif; ?>><?php the_title(); ?></option>
-										<?php endforeach;
-
-									endif;
-
-									wp_reset_postdata();
-									?>
-
-								</select>
-							</div>
-						</div>
-
-						<div id="select-company" class="form-field is-hidden">
-							<div class="form-select">
 								<select name="company_id">
-									<option value="" hidden="true">Selecione uma opção</option>
+									<option value="" hidden="true">Selecione uma empresa</option>
 
-									<?php
-									if ( $companies ):
+                                    <?php
+                                    if ( $companies ):
 
-										foreach($companies as $post):
+                                        foreach($companies as $post):
 
-											setup_postdata( $post )
-											?>
-											<option value="<?php the_id(); ?>"<?php if ( get_query_var( 'company_id' ) == $post->ID ): ?> selected="true"<?php endif; ?>><?php the_title(); ?></option>
-										<?php endforeach;
+                                            setup_postdata( $post )
+                                            ?>
+                                            <option value="<?php the_id(); ?>"<?php if ( get_query_var( 'company_id' ) == $post->ID ): ?> selected="true"<?php endif; ?>><?php the_title(); ?></option>
+                                        <?php endforeach;
 
-									endif;
+                                    endif;
 
-									wp_reset_postdata();
-									?>
+                                    wp_reset_postdata();
+                                    ?>
 
 								</select>
 							</div>
 						</div>
+
+
+
 					</div>
 
 					<div class="col col--md-1 fx fx--row">

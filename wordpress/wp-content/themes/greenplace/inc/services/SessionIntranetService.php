@@ -17,7 +17,11 @@ class SessionIntranetService
         $this->prefixAmbiente = explode('.', $_SERVER['HTTP_HOST'])[2];
 
         ##utiliza-se para definir os cookeis no ambiente local
-        $this->setCookieAmbienteLocal();
+//        $this->setCookieAmbienteLocal();
+
+//		var_dump(1111111111 );
+//
+//		var_dump($this->prefixAmbiente );
 
         $this->urlLoginIntranet
             = "https://login.{$this->prefixAmbiente}.bb.com.br/sso/XUI/#login/&goto=https://portal.stt.{$this->prefixAmbiente}.bb.com.br/";

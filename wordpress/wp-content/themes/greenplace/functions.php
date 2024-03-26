@@ -7,7 +7,6 @@
  * @package Greenplace
  */
 
-
 /**
  * Load Auth
  */
@@ -23,7 +22,7 @@ $auth->checkLogin();
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.5' );
+	define( '_S_VERSION', '2.0.0' );
 }
 
 
@@ -111,6 +110,9 @@ if ( ! function_exists( 'greenplace_setup' ) ) :
 
 		wp_enqueue_style( 'process', get_template_directory_uri() . '/css/process.css',false,'1.1','all');
 		wp_enqueue_style( 'guide', get_template_directory_uri() . '/css/guide.css',false,'1.1','all');
+		wp_enqueue_style( 'employee', get_template_directory_uri() . '/css/employee.css',false,'1.1','all');
+
+		wp_enqueue_style( 'footer', get_template_directory_uri() . '/css/footer.css',false,'1.1','all');
 	}
 endif;
 add_action( 'after_setup_theme', 'greenplace_setup' );
@@ -136,53 +138,57 @@ add_action( 'after_setup_theme', 'greenplace_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function greenplace_widgets_init() {
-	// register_sidebar(
-	// 	array(
-	// 		'name'          => esc_html__( 'Sidebar', 'greenplace' ),
-	// 		'id'            => 'sidebar-1',
-	// 		'description'   => esc_html__( 'Add widgets here.', 'greenplace' ),
-	// 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-	// 		'after_widget'  => '</section>',
-	// 		'before_title'  => '<h2 class="widget__title">',
-	// 		'after_title'   => '</h2>',
-	// 	)
-	// );
+	$register_sidebar = [
+		[
+			'name' => 'Home Middle',
+			'id'   => 'home-mid-1',
+			'description' => 'Add widgets here.'
+		],
+		[
+			'name' => 'Home Bottom',
+			'id'   => 'home-bottom-1',
+			'description' => 'Add widgets here.'
+		],
+		[
+			'name' => 'Process Sidebar',
+			'id'   => 'process-sidebar-1',
+			'description' => 'Add widgets here.'
+		],
+		[
+			'name' => 'Home Topo Right',
+			'id'   => 'home-topo-2',
+			'description' => 'Add widgets here.'
+		],
+		[
+			'name' => 'Home Middle Right',
+			'id'   => 'home-mid-2',
+			'description' => 'Add widgets here.'
+		],
+		[
+			'name' => 'Home Bottom Left',
+			'id'   => 'home-bot-1',
+			'description' => 'Add widgets here.'
+		],
+		[
+			'name' => 'Home Bottom Right',
+			'id'   => 'home-bot-2',
+			'description' => 'Add widgets here.'
+		],
+	];
 
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Home Middle', 'greenplace' ),
-			'id'            => 'home-mid-1',
-			'description'   => esc_html__( 'Add widgets here.', 'greenplace' ),
-			'before_widget' => '<section id="%1$s" class="widget fx-grow %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget__title">',
-			'after_title'   => '</h2>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Home Bottom', 'greenplace' ),
-			'id'            => 'home-bottom-1',
-			'description'   => esc_html__( 'Add widgets here.', 'greenplace' ),
-			'before_widget' => '<div class="col col--md-6"><section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section></div>',
-			'before_title'  => '<h2 class="widget__title">',
-			'after_title'   => '</h2>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Process Sidebar', 'greenplace' ),
-			'id'            => 'process-sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'greenplace' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget__title">',
-			'after_title'   => '</h2>',
-		)
-	);
+	foreach ($register_sidebar as $sidebar) {
+		register_sidebar(
+			array(
+				'name'          => esc_html__($sidebar['name'], 'greenplace'),
+				'id'            => $sidebar['id'],
+				'description'   => esc_html__($sidebar['description'], 'greenplace'),
+				'before_widget' => '<section id="%1$s" class="widget fx-grow %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h2 class="widget__title">',
+				'after_title'   => '</h2>',
+			)
+		);
+	}
 }
 add_action( 'widgets_init', 'greenplace_widgets_init' );
 
@@ -213,10 +219,11 @@ function greenplace_scripts() {
 
 	wp_enqueue_script( 'greenplace-professional-profiles', get_template_directory_uri() . '/js/professional-profiles.js', array(), '20151215', true );
 
-    wp_enqueue_script( 'greenplace-logout-intranet', get_template_directory_uri() . '/js/logout-intranet.js', array(), '20151215', true );
+	wp_enqueue_script( 'greenplace-logout-intranet', get_template_directory_uri() . '/js/logout-intranet.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'greenplace-employee', get_template_directory_uri() . '/js/employee.js', array(), '20151215', true );
 
-    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
@@ -233,27 +240,15 @@ add_action('http_api_curl', function( $handle ){
 }, 10);
 
 
-function professional_profiles(){
-
-	$profiles = null;
-	if ($_GET['category'] !== null) {
-		$professional_profiles = new ProfessionalProfiles();
-		$profiles = $professional_profiles->list_profiles($_GET['category']);
-	}
-
-	echo json_encode($profiles);
-	die();
-}
-
 add_action( 'wp_ajax_get_professional_profiles', 'professional_profiles' );
 add_action( 'wp_ajax_nopriv_get_professional_profiles', 'professional_profiles' );
 
 function logout_intranet() {
 
-    $auth = new BB_AuthIntranet();
-    $resposta = $auth->logoutIntranet();
-    echo json_encode($resposta);
-    die();
+	$auth = new BB_AuthIntranet();
+	$resposta = $auth->logoutIntranet();
+	echo json_encode($resposta);
+	die();
 }
 
 add_action( 'wp_ajax_get_logout_intranet', 'logout_intranet' );
@@ -283,6 +278,10 @@ function get_guides($category): array {
 	return $process->list_guides($category);
 }
 
+function get_employees(): array {
+	$process = new Employee();
+	return $process->list_employees();
+}
 
 function dynamic_select_form_contact ( $scanned_tag, $replace ) {
 
@@ -334,9 +333,27 @@ function get_question_category(): array {
 }
 
 function get_usuario_intranet(): array {
-    $usuaria_intarnet = new UsuarioIntranet();
+	$usuaria_intarnet = new UsuarioIntranet();
 
-    return $usuaria_intarnet->obterUsuario();
+	return $usuaria_intarnet->obterUsuario();
+}
+
+function get_content_portal_maps_footer(): array
+{
+	$maps = new PortalMap();
+	return $maps->get_map_footer();
+}
+
+function get_content_professional_profiles(): array
+{
+	$professionals = new ProfessionalProfiles();
+	return $professionals->get_professional_profiles();
+}
+
+function get_content_outsourcing_journey(): array
+{
+	$outsourcing = new OutsourcingJourney();
+	return $outsourcing->get_outsourcing_journey();
 }
 
 /**
@@ -391,9 +408,14 @@ require get_template_directory() . '/post-types/bulletin.php';
 require get_template_directory() . '/post-types/guide.php';
 //require get_template_directory() . '/post-types/acionamento.php';
 require get_template_directory() . '/post-types/guide-acionamento.php';
+require get_template_directory() . '/post-types/employee.php';
 require get_template_directory() . '/post-types/user.php';
 require get_template_directory() . '/post-types/team.php';
 require get_template_directory() . '/post-types/simple.php';
+
+require get_template_directory() . '/post-types/portal-map.php';
+require get_template_directory() . '/post-types/professional-profiles.php';
+require get_template_directory() . '/post-types/outsourcing-journey.php';
 
 /**
  * Call a modular widget function
@@ -401,6 +423,10 @@ require get_template_directory() . '/post-types/simple.php';
 require get_template_directory() . '/inc/widgets/widget-block.php';
 require get_template_directory() . '/inc/widgets/widget-process.php';
 require get_template_directory() . '/inc/widgets/widget-important.php';
+require get_template_directory() . '/inc/widgets/widget-timeline.php';
+require get_template_directory() . '/inc/widgets/widget-professional-profile.php';
+require get_template_directory() . '/inc/widgets/widget-guides.php';
+require get_template_directory() . '/inc/widgets/widget-outsourcing-journey.php';
 
 /**
  * Load controllers
@@ -410,4 +436,10 @@ require get_template_directory() . '/inc/controllers/Questions.php';
 require get_template_directory() . '/inc/controllers/Process.php';
 require get_template_directory() . '/inc/controllers/Guide.php';
 require get_template_directory() . '/inc/controllers/UsuarioIntranet.php';
+require get_template_directory() . '/inc/controllers/Employee.php';
+
+require get_template_directory() . '/inc/controllers/PortalMap.php';
+
+require get_template_directory() . '/inc/controllers/CustomRewriteController.php';
+require get_template_directory() . '/inc/controllers/OutsourcingJourney.php';
 
